@@ -1,0 +1,43 @@
+﻿body {
+	background: url(background_dark.png);
+	margin: 12;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+
+table {
+	background-color: white;
+	border-style: solid; 
+	border-color: gray;
+	border-width: 1px;
+	border-collapse: collapse;
+	text-align: right;
+	width: 100%;
+}
+
+th {
+	padding-right: 5px;
+	background-color: rgb(180, 10, 0); 
+	text-align: right;
+	color: white;
+}
+
+tr.oddRow td {background-color: #edf1ff;}
+td {padding-right: 5px;}
+
+
+
+
+
+
+
+
+
