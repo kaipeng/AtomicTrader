@@ -34,7 +34,6 @@ public class StrategyRunner {
 
                     synchronized (strategies) {
                         for (Strategy strategy : strategies) {
-
                             strategy.process();
                         }
                     }
@@ -65,6 +64,18 @@ public class StrategyRunner {
         synchronized (strategies) {
             strategies.add(strategy);
             marketBooks = traderAssistant.getAllMarketBooks().values();
+        }
+    }
+    public void removeListener(Strategy strategy) {
+        synchronized (strategies) {
+            strategies.remove(strategy);
+            marketBooks = traderAssistant.getAllMarketBooks().values();
+        }
+    }
+    public void removeAllListeners() {
+        synchronized (strategies) {
+            strategies.clear();
+            marketBooks.clear();
         }
     }
 

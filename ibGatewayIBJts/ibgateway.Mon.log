@@ -999,3 +999,1030 @@ HP 22:49:30:152 JTS-DeadlockMonitor-2: CPU:cur=0.04% avg=0.36% 30 min avg=0.26% 
 HP 22:49:30:152 JTS-DeadlockMonitor-2: GC:called=45 times CPU used=0.04%
 HP 22:49:30:152 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
 HP 22:49:40:768 JTS-Cleaner-28: Cleaning maps
+22:50:39:081 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+HP 22:50:40:768 JTS-Cleaner-28: Cleaning maps
+FA 22:50:49:467 JTS-Main: ------------------------------- IB GATEWAY RESTART --------------------------------
+FA 22:50:49:471 JTS-Main: Jts dir is /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/
+FA 22:50:49:514 JTS-Main: PROXY Installed custom selector
+FA 22:50:49:525 JTS-Main: LOCALE: Property locale_to_use=null
+FA 22:50:49:538 JTS-Main: LOCALE: JTS Locale=en_US  country=United States  variant=
+FA 22:50:49:538 JTS-Main: Region:America dr:false
+FA 22:50:49:539 JTS-Main: WebRegionURL Path:/java/classes/locales.jar URL:http://www.interactivebrokers.com/java/classes/locales.jar
+FA 22:50:49:542 JTS-Main: Starting to download 'http://www.interactivebrokers.com/java/classes/locales.jar' using HotBackup 'http://www.interactivebrokers.com/java/classes/locales.jar'
+FA 22:50:50:469 JTS-Main: LOCALE: needToUpdate  dest=/Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/locales.jar  sourceMod=2013-02-06 12:20:00  destMod=2013-02-06 12:20:00  sourceSize=57792  destSize=57792  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
+FA 22:50:50:505 JTS-Main: LOCALE: /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/locales.jar already up-to-date
+FA 22:50:50:596 JTS-Main: LOCALE: loaded 9 supported locales
+FA 22:50:50:639 JTS-Main: LOCALE: loaded 8 countries
+FA 22:50:50:683 JTS-Main: Locale from ini: en
+FA 22:50:50:683 JTS-Main: LOCALE: created classloader java.net.URLClassLoader@744d76b4 with file:/Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/locales.jar, parent: sun.misc.Launcher$AppClassLoader@1f3e8d89
+FA 22:50:50:684 JTS-Main: LOCALE: Property locale_to_use=en
+FA 22:50:50:685 JTS-Main: LOCALE: JTS Locale=en_US  country=United States  variant=
+FA 22:50:50:685 JTS-Main: Locale=en_US  country=United States  variant=
+FA 22:50:51:583 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
+FA 22:50:52:230 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
+FA 22:50:52:231 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
+FA 22:50:52:233 JTS-Main: LOCALE: type: launcher intended: en_US actual:  size: 206
+FA 22:50:52:244 JTS-Main: Build 936.9d, Apr 25, 2013 12:13:33 PM
+FA 22:50:52:571 JTS-Main: LookAndFeelChangedListener installed
+FA 22:50:52:575 JTS-Main: JtsLookAndFeel initialized
+FA 22:50:53:078 JTS-Main: Current LAF: TWS LAF
+FA 22:50:53:087 AWT-EventQueue-0: java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+FA 22:50:54:511 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=43,668KB HeapUsage: Max=126,912KB used=83,243KB committed=126,912KB NonHeapUsage: Max=133,120KB used=26,768KB committed=28,460KB
+FA 22:50:54:522 AWT-EventQueue-0: Started on 20130430-05:50:54
+FA 22:50:54:545 AWT-EventQueue-0: Default timezone:America/Los_Angeles name:Pacific Standard Time dst:3600000
+FA 22:50:54:545 AWT-EventQueue-0: java version = 1.6.0_45
+FA 22:50:54:546 AWT-EventQueue-0: sun.arch.data.model = 64
+FA 22:50:54:546 AWT-EventQueue-0: os = Mac OS X
+FA 22:50:54:546 AWT-EventQueue-0: runtime = Java(TM) SE Runtime Environment
+FA 22:50:54:546 AWT-EventQueue-0: vendor = Apple Inc.
+FA 22:50:54:546 AWT-EventQueue-0: vm name = Java HotSpot(TM) 64-Bit Server VM
+22:50:54:910 IBController: detected frame entitled: IB Gateway; event=Opened
+22:50:54:928 IBController: Button was disabled, has been enabled: Login
+22:50:54:928 IBController: Click button: Login
+FA 22:50:55:007 AWT-EventQueue-0: Setting dir is /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/
+FA 22:50:55:008 AWT-EventQueue-0: PROXY Cleared HTTP proxy: no valid proxy is present (passing on :0)
+FA 22:50:55:011 AWT-EventQueue-0: SPLASH Creating screen with 5 steps
+FA 22:50:55:212 AWT-EventQueue-0: Contacting gw1.ibllc.com:4000 as user edemo
+FA 22:50:55:250 AWT-EventQueue-0: HTBP Hot Backup PGL generated:
+gw1.ibllc.com:4000
+gw1_hb1.ibllc.com:4000
+gw1_hb2.ibllc.com:4000
+
+FA 22:50:55:250 AWT-EventQueue-0: HTBP Usable connections list generated
+gw1.ibllc.com:4000
+gw1.ibllc.com:4000
+gw1_hb1.ibllc.com:4000
+gw1.ibllc.com:4000
+gw1_hb2.ibllc.com:4000
+
+FA 22:50:55:251 AWT-EventQueue-0: HTBP Main end point set:gw1.ibllc.com:4000 Strategy: ON
+FA 22:50:55:251 JTS-MainEndPointProbe-6: HTBP Starting PGL list probing:
+gw1.ibllc.com:4000
+gw1_hb1.ibllc.com:4000
+gw1_hb2.ibllc.com:4000
+
+FA 22:50:55:254 AWT-EventQueue-0: CONN CALC: Last connection attempt time is cleared!
+FA 22:50:55:254 AWT-EventQueue-0: CONN CALC: Last connection set as now:22:50:55:254
+FA 22:50:55:255 AWT-EventQueue-0: Prelogin delay:0
+FA 22:50:55:256 JTS-Login-7: Starting
+FA 22:50:55:261 JTS-Login-7: SPLASH Connecting to server
+FA 22:50:55:263 JTS-Login-7: Connecting gw1.ibllc.com:4000 timeout=20000
+FA 22:50:55:266 JTS-Order-Audit-9: Starting
+FA 22:50:55:344 JTS-Login-7: Connected to gw1.ibllc.com:4000 on local port 0 socket local addrs:port /10.1.10.37:52224
+FA 22:50:55:344 JTS-Login-7: Authenticating
+FA 22:50:55:362 JTS-CCPListener-10: Starting
+FA 22:50:55:367 JTS-CCPListener-10: Initial listener buffer size is 65700
+FA 22:50:55:367 JTS-CCPListener-10: Capping listener buffer size at 65536
+22:50:55:412 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Opened
+22:50:55:412 IBController: Found TWS main window
+FA 22:50:55:413 JTS-Login-7: AuthTimeoutMonitor: deactivate
+FA 22:50:55:413 JTS-Login-7: AuthTimeoutMonitor: timeout=20000
+FA 22:50:55:416 JTS-Login-7: AuthTimeoutMonitor: activate
+FA 22:50:55:416 JTS-AuthTimeoutMonitorThread-12: Starting 
+FA 22:50:55:420 JTS-Login-7: LOGIN_TIME_MONITOR	 false 22:50:55:419 since start = 0 thread delay = 0 global delay = 0 tag=null, cls=AuthDispatcher method=connect
+FA 22:50:55:421 JTS-Login-7: SPLASH -0001 step 1 AuthDispatcher.connect
+FA 22:50:55:422 JTS-Login-7: Sending connect request
+FA 22:50:55:438 JTS-Login-7: SPLASH Authenticating
+FA 22:50:55:439 JTS-Login-7: Terminating
+FA 22:50:55:444 JTS-AuthDispatcher-11: Starting
+FA 22:50:55:518 JTS-MainEndPointProbe-6: HTBP Hot Backup peer resolution failed:gw1_hb2.ibllc.com:4000
+FA 22:50:55:518 JTS-MainEndPointProbe-6: HTBP Usable connections list generated
+gw1.ibllc.com:4000
+gw1.ibllc.com:4000
+gw1_hb1.ibllc.com:4000
+
+FA 22:50:55:518 JTS-MainEndPointProbe-6: HTBP Top priority host duplicate removed:gw1.ibllc.com:4000
+FA 22:50:55:518 JTS-MainEndPointProbe-6: HTBP UGL updated after probe! Current index:0
+FA 22:50:55:519 JTS-AuthDispatcher-11: Received NS_DEMO_USER_RESPONSE
+FA 22:50:55:608 JTS-DeadlockMonitor-2: CPU:cur=27.61% avg=27.61% 30 min avg=27.61% 5 min avg=27.61% 1 min avg=27.61%
+FA 22:50:55:608 JTS-DeadlockMonitor-2: GC:called=23 times CPU used=4.46%
+FA 22:50:55:608 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+FA 22:50:55:686 JTS-AuthDispatcher-11: SPLASH 0265 step 2 AuthDispatcher.processDataItr
+FA 22:50:55:688 JTS-AuthDispatcher-11: Received NS_AUTH_START: 1
+FA 22:50:55:688 JTS-AuthDispatcher-11: pwd time to expiry ms: 309600316000 days: 3584
+FA 22:50:55:688 JTS-AuthDispatcher-11:  NS_AUTH_START config=1 version=7 pwd=1 soft=0 token=0 initialTokenType=PWD
+FA 22:50:55:690 JTS-AuthDispatcher-11: Starting password Authentication
+FA 22:50:55:690 JTS-AuthDispatcher-11: sendXYZMessage: 777
+FA 22:50:55:975 JTS-AuthDispatcher-11: SPLASH 0290 step 2 AuthDispatcher.processDataItr
+FA 22:50:55:976 JTS-AuthDispatcher-11: Receiver: 777
+FA 22:50:55:976 JTS-AuthDispatcher-11: processXYZMessage: 777 protocol version: 7
+FA 22:50:55:976 JTS-AuthDispatcher-11: Received AUTH_PARAMS
+22:50:56:045 IBController: detected frame entitled: Authenticating...; event=Opened
+FA 22:50:56:056 JTS-AuthDispatcher-11: sendXYZMessage: 777
+FA 22:50:56:139 JTS-AuthDispatcher-11: Receiver: 777
+FA 22:50:56:139 JTS-AuthDispatcher-11: processXYZMessage: 777 protocol version: 7
+FA 22:50:56:139 JTS-AuthDispatcher-11: Received SERVER_PARAMS
+FA 22:50:56:145 JTS-AuthDispatcher-11: sendXYZMessage: 777
+FA 22:50:56:589 JTS-AuthDispatcher-11: SPLASH 0614 step 2 AuthDispatcher.processDataItr
+FA 22:50:56:589 JTS-AuthDispatcher-11: Receiver: 777
+FA 22:50:56:589 JTS-AuthDispatcher-11: processXYZMessage: 777 protocol version: 7
+FA 22:50:56:590 JTS-AuthDispatcher-11: Received AUTH_RESULT
+FA 22:50:56:590 JTS-AuthDispatcher-11: Passed pwd authentication.
+FA 22:50:56:590 JTS-AuthDispatcher-11: Authentication completed.
+FA 22:50:56:670 JTS-AuthDispatcher-11: Received NS_CONNECT_RESPONSE
+FA 22:50:56:786 JTS-AuthDispatcher-11: Received NS_FIX_START
+FA 22:50:56:789 JTS-AuthDispatcher-11: Terminating
+FA 22:50:56:791 JTS-AuthTimeoutMonitorThread-12: Terminating
+FA 22:50:56:790 JTS-PostAuthenticate-19: AuthTimeoutMonitor: deactivate
+FA 22:50:56:791 JTS-PostAuthenticate-19: Authentication complete
+FA 22:50:56:805 AWT-EventQueue-0: jtsLookAndFeel uninitialized
+FA 22:50:56:806 AWT-EventQueue-0: JtsLookAndFeel initialized
+FA 22:50:56:849 AWT-EventQueue-0: Current LAF: TWS LAF
+FA 22:50:56:860 JTS-PostAuthenticate-19: plugin support version =1.0
+FA 22:50:56:862 JTS-PostAuthenticate-19: JDOMFactory Class =interface org.jdom.JDOMFactory
+FA 22:50:56:876 JTS-PostAuthenticate-19: hsqldb jdbc =class org.hsqldb.jdbcDriver 2.2
+FA 22:50:56:886 AWT-EventQueue-0: jtsLookAndFeel uninitialized
+FA 22:50:56:886 AWT-EventQueue-0: JtsLookAndFeel initialized
+FA 22:50:56:890 AWT-EventQueue-0: Current LAF: TWS LAF
+FA 22:50:56:909 JTS-PostAuthenticate-19: LOGIN_TIME_MONITOR	 false 22:50:56:909 since start = 1490 thread delay = 1490 global delay = 0 tag=Step7, cls=AbstractFixLogonHandler method=setDispatcherAndStartFixLogon
+FA 22:50:56:910 JTS-PostAuthenticate-19: SPLASH Requesting startup parameters
+FA 22:50:56:912 JTS-PostAuthenticate-19: SPLASH 0321 step 3 AbstractFixLogonHandler.setDispatcherAndStartFixLogon
+FA 22:50:56:912 JTS-LogonDispatcher-22: Starting
+FA 22:50:56:920 JTS-PostAuthenticate-19: pre-logon message successfully sent
+FA 22:50:56:921 JTS-PostAuthenticate-19: start ping with 1000 for: JTS-CCPPing-23
+FA 22:50:56:943 JTS-CCPPing-23: Starting
+FA 22:50:57:247 AWT-EventQueue-0: Currencies:[AUD, CAD, CHF, CNH, DKK, EUR, GBP, HKD, JPY, KRW, MXN, NOK, NZD, RUB, SEK, SGD, USD, BASE]
+FA 22:50:57:253 AWT-EventQueue-0: Enabled features: null
+FA 22:50:56:000 AWT-EventQueue-0: Setting time offset to -1280 diff -1280
+FA 22:50:56:006 AWT-EventQueue-0: manualTicketPermission null
+FA 22:50:56:011 AWT-EventQueue-0: WebRegionURL Path:/java/classes/language.jar URL:http://www.interactivebrokers.com/java/classes/language.jar
+FA 22:50:56:012 AWT-EventQueue-0: Starting to download 'http://www.interactivebrokers.com/java/classes/language.jar' using HotBackup 'http://www.interactivebrokers.com/java/classes/language.jar'
+FA 22:50:56:540 AWT-EventQueue-0: getFileFromUrl: dest=/Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/language.jar empty sourceSize=2031077
+FA 22:50:56:540 AWT-EventQueue-0: LOCALE: downloading file /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/language.jar from http://www.interactivebrokers.com/java/classes/language.jar
+FA 22:51:00:393 AWT-EventQueue-0: Finished downloading file: /java/classes/language.jar
+FA 22:51:00:393 AWT-EventQueue-0: LOCALE: finished downloading /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/language.jar
+FA 22:51:00:394 AWT-EventQueue-0: LOCALE: created classloader java.net.URLClassLoader@47959352 with file:/Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/language.jar, parent: sun.misc.Launcher$AppClassLoader@1f3e8d89
+FA 22:51:00:394 AWT-EventQueue-0: Locale=en_US  country=United States  variant=
+FA 22:51:00:394 AWT-EventQueue-0: prohibiting class lookup [ji18n.Language]
+FA 22:51:01:530 AWT-EventQueue-0: prohibiting class lookup [ji18n.Language_en]
+FA 22:51:01:532 AWT-EventQueue-0: prohibiting class lookup [ji18n.Language_en_US]
+FA 22:51:01:533 AWT-EventQueue-0: prohibiting resource lookup [ji18n/Language_en_US.properties]
+FA 22:51:01:584 AWT-EventQueue-0: LOCALE: type: full intended: en_US actual: en size: 11122
+FA 22:51:01:683 AWT-EventQueue-0: WebRegionURL Path:/java/classes/messageurls.properties URL:http://www.interactivebrokers.com/java/classes/messageurls.properties
+FA 22:51:01:684 AWT-EventQueue-0: Starting to download 'http://www.interactivebrokers.com/java/classes/messageurls.properties' using HotBackup 'http://www.interactivebrokers.com/java/classes/messageurls.properties'
+FA 22:51:01:903 AWT-EventQueue-0: LOCALE: needToUpdate  dest=/Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/messageurls.properties  sourceMod=2010-11-15 14:45:18  destMod=2010-11-15 14:45:18  sourceSize=92  destSize=92  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
+FA 22:51:01:903 AWT-EventQueue-0: LOCALE: /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/messageurls.properties already up-to-date
+FA 22:51:01:904 AWT-EventQueue-0: S3: CCP does not support S3
+FA 22:51:01:905 AWT-EventQueue-0: IBGateway connection to ccp succeeded
+FA 22:51:01:905 AWT-EventQueue-0: LOGIN_TIME_MONITOR	 false 22:51:03:185 since start = 7766 thread delay = 6276 global delay = 0 tag=Step6, cls=GatewayAdapter method=loginSuccess-1
+FA 22:51:01:905 AWT-EventQueue-0: SPLASH Loading resources
+FA 22:51:01:905 AWT-EventQueue-0: SPLASH 6275 step 4 GatewayAdapter.loginSuccess-1
+FA 22:51:02:065 AWT-EventQueue-0: EXEC Creating ExecReportMgr
+FA 22:51:02:192 AWT-EventQueue-0: LOGIN_TIME_MONITOR	 false 22:51:03:472 since start = 8053 thread delay = 287 global delay = 287 tag=Step4, cls=JConQueryTool method=JConQueryTool()-1
+FA 22:51:02:192 AWT-EventQueue-0: SPLASH Initializing environment
+FA 22:51:02:192 AWT-EventQueue-0: SPLASH 0287 step 5 JConQueryTool.JConQueryTool()-1
+FA 22:51:02:194 JTS-Async-26: Starting
+FA 22:51:02:194 JTS-AsyncNonLocked-27: Starting
+FA 22:51:02:253 AWT-EventQueue-0: JConQueryTool()-2
+FA 22:51:02:254 AWT-EventQueue-0: LOGIN_TIME_MONITOR	 false 22:51:03:533 since start = 8114 thread delay = 61 global delay = 61 tag=Step15, cls=GatewayAdapter method=loginSuccess-2
+FA 22:51:02:254 AWT-EventQueue-0: SPLASH Initializing resources
+FA 22:51:02:255 AWT-EventQueue-0: HTBP Peer connected current index:0 peer:gw1.ibllc.com:4000
+FA 22:51:02:257 JTS-LogonDispatcher-22: Terminating
+FA 22:51:02:257 JTS-CCPDispatcher-32: Starting
+FA 22:51:02:259 AWT-EventQueue-0: Currencies:[AUD, CAD, CHF, CNH, DKK, EUR, GBP, HKD, JPY, KRW, MXN, NOK, NZD, RUB, SEK, SGD, USD, BASE]
+FA 22:51:02:259 AWT-EventQueue-0: Enabled features: null
+FA 22:50:56:000 AWT-EventQueue-0: Setting time offset to -7543 diff -6263
+FA 22:50:56:001 AWT-EventQueue-0: manualTicketPermission null
+FA 22:50:56:001 AWT-EventQueue-0: Reconnection time cleared: argClearBackoff=true base=0 range=5000 next=0 disconnected=0
+FA 22:50:56:002 AWT-EventQueue-0: LOGIN_TIME_MONITOR	 false 22:51:03:545 since start = 8126 thread delay = 12 global delay = 12 tag=Step4, cls=JConQueryTool method=handlePreLogon
+FA 22:50:56:002 AWT-EventQueue-0: SPLASH Initializing environment
+FA 22:50:56:002 AWT-EventQueue-0: Handling prelogon msg NORMAL
+FA 22:50:56:149 JTS-OrderRecovery-34: Starting
+FA 22:50:56:585 JTS-ContractDetails-36: Starting
+FA 22:50:56:823 AWT-EventQueue-0: Settings : loadFromXMLFile : Could not find settings file /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/ibg.xml
+FA 22:50:56:849 AWT-EventQueue-0: autoexport set to stop: null, start: , stop: 
+FA 22:50:56:893 AWT-EventQueue-0: DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+FA 22:50:56:893 AWT-EventQueue-0: DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+FA 22:50:56:893 AWT-EventQueue-0: DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+FA 22:50:56:893 AWT-EventQueue-0: DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+FA 22:50:56:893 AWT-EventQueue-0: DelayedMarketDataList is created: Approved: ; Notified: ; Pre-populated: null
+FA 22:50:57:146 AWT-EventQueue-0: JConQueryTool.init()-3
+FA 22:50:57:147 AWT-EventQueue-0: JConQueryTool.init()-4
+FA 22:50:57:383 AWT-EventQueue-0: Resetting seqNum during preLogon  resetTime=  logonResetTime=null
+FA 22:50:57:762 JTS-CCPDispatcher-32: dayInit: new values: dayOfTheWeek: 2 (Mon), YYYYMMofToday: 201304, YYYYMMDDofToday: 20130429
+FA 22:50:57:767 JTS-CCPDispatcher-32: Currencies:[AUD, CAD, CHF, CNH, DKK, EUR, GBP, HKD, JPY, KRW, MXN, NOK, NZD, RUB, SEK, SGD, USD, BASE]
+FA 22:50:57:768 JTS-CCPDispatcher-32: Enabled features: 1DAYSORDER,ACCTALL,ACCTSUM,AD,ALGODEF,APIELOG,AWAYCMTAREV,BESTCLCR,BESTSCHED,BLOTTERGROUPS,BONDMENU,BT1,CMAG,COMBLAST,COMPN,CONSTOP,CONTSORT,CURRENTPRICEANDSIZE,CUSIP,DELAYMD,ESIGNAL,EVAPI,EXERCISE,EXTATTACH,FACLOSE,FXCONV,FXHEDGE,GREEKLIST,HALTED,HEDGECFD,HOMEGROUP,ICSLEG,IECOMBO1TO1,IECOMBOLEGMOD,IECOMBONESTED,IECOMBOPERLEGPRICE,IECOMBORELLMT,IGNOREYTW,ISW,JBA,LEDGER,LEGMARKUP,MANGAWAY,MDEXCH,MKTADDLIQ,MODELAVGPRICE,MODELFARM,MOODY,MOSAIC,NDMDERR,NIGHTLY,NONUSCOMBO,NONUSWHATIF,NSCAN,PAIRTRADE,PCTCHANGE,PHIST,POSTXPMRG,RELIND,SCALEDAYADJUST,SCALEFRAC,SCALEMOD,SCALEMODEL,SCALERANDOMIZE,SCALETIMEMOD,SCALETIMEMOD1,SCALEWHATIF,SEPLAST,SHOWLEGSEPARATE,SIMUPORTF,SLB,SLOWPOSUPD,SMODELS,STOPPROFITOFFSET,TAPE,UNRLAST,USEPARENTENDTIME,VIRTSEC,VOLAT,VOLATFUT,WGVISIBILITY
+FA 22:51:05:000 JTS-CCPDispatcher-32: Setting time offset to -314 diff 7229
+FA 22:51:05:002 JTS-CCPDispatcher-32: manualTicketPermission null
+FA 22:51:05:002 JTS-CCPDispatcher-32: Handling normal logon msg NORMAL
+FA 22:51:05:002 JTS-CCPDispatcher-32: Processing normal logon msg
+FA 22:51:05:002 JTS-CCPDispatcher-32: Restart quick=false cold=false logon=NORMAL batch=true
+FA 22:51:05:002 JTS-CCPDispatcher-32: SPLASH Processing startup parameters
+FA 22:51:05:002 JTS-CCPDispatcher-32: SPLASH 1844 step 6 JConQueryTool.processNormalLogon1-1
+FA 22:51:05:002 JTS-CCPDispatcher-32: Processing normal logon 1
+FA 22:51:05:004 JTS-CCPDispatcher-32: Updating seqNum during normal logon with 1
+FA 22:51:05:005 JTS-CCPDispatcher-32: Requesting compatible routing MARKET_DATA from CompatibleFarmEndPoints [md=useccphost:4000, mdFarm=ibdemo, hmds=useccphost:4000, hmdsFarm=demohmds]
+FA 22:51:05:014 JTS-CCPDispatcher-32: HTBP Hot Backup PGL generated:
+:0
+
+FA 22:51:05:015 JTS-CCPDispatcher-32: HTBP Usable connections list generated
+:0
+
+FA 22:51:05:015 JTS-CCPDispatcher-32: HTBP Main end point set::0 Strategy: SINGLE_HOST
+FA 22:51:05:017 JTS-CCPDispatcher-32: Farm ibdemo/UNCONNECTED: Creating ServiceConnection for:ibdemo
+FA 22:51:05:018 JTS-CCPDispatcher-32: Farm ibdemo/UNCONNECTED: Adding message to queue
+FA 22:51:05:018 JTS-CCPDispatcher-32: Farm ibdemo/UNCONNECTED: Starting connection thread
+FA 22:51:05:018 JTS-CCPDispatcher-32: Max API Backfill Years is set to 1
+FA 22:51:05:020 JTS-ServiceConnector-39: Farm ibdemo/STARTING: Connecting via ccp conman (ibdemo)...
+FA 22:51:05:020 JTS-ServiceConnector-39: Connecting gw1.ibllc.com:4000 timeout=0
+FA 22:51:05:020 JTS-ServiceConnector-39: CONN CALC: Last connection set as now:22:51:05:334
+FA 22:51:05:022 JTS-CCPDispatcher-32: Fast lockout exchanges:null
+FA 22:51:05:022 JTS-CCPDispatcher-32: API Max tickers=250, TWS Max tickers=250
+FA 22:51:05:022 JTS-CCPDispatcher-32: Split BidAsk/Last requests:true
+FA 22:51:05:022 JTS-CCPDispatcher-32: Combo Last requests:true
+FA 22:51:05:022 JTS-CCPDispatcher-32: Split BidAsk/Last requests:true
+FA 22:51:05:024 JTS-CCPDispatcher-32: Olympiad mode
+FA 22:51:05:051 JTS-CCPDispatcher-32: AccountReqManager init
+FA 22:51:05:051 JTS-AsyncNonLocked-27: CM sendAccountSubscription called for DU15146.
+FA 22:51:05:053 JTS-CCPDispatcher-32: ModelSummaryRequestMgr init
+FA 22:51:05:054 JTS-AsyncNonLocked-27: CM setting requested account spec to DU15146.
+FA 22:51:05:054 JTS-CCPDispatcher-32: SPLASH Loading order defaults
+FA 22:51:05:090 JTS-CCPDispatcher-32: No defaults for: CMDTY
+FA 22:51:05:099 JTS-CCPDispatcher-32: No defaults for: CMDTY
+FA 22:51:05:100 JTS-CCPDispatcher-32: SPLASH Initializing managers
+FA 22:51:05:102 JTS-ServiceConnector-39: Connected to gw1.ibllc.com:4000 on local port 0 socket local addrs:port /10.1.10.37:52227
+FA 22:51:05:102 JTS-ServiceConnector-39: Farm ibdemo/PRE_CCP: Connected, sending auth
+FA 22:51:05:102 JTS-ServiceConnector-39: Added to valid hosts list: gw1.ibllc.com
+FA 22:51:05:103 JTS-SocketListener-41: API server listening on port 4001
+FA 22:51:05:106 JTS-ibdemoListener-42: Starting
+FA 22:51:05:106 JTS-ibdemoListener-42: Initial listener buffer size is 65700
+FA 22:51:05:106 JTS-ibdemoListener-42: Capping listener buffer size at 65536
+FA 22:51:05:112 JTS-ServiceConnector-39: AuthTimeoutMonitor: deactivate
+FA 22:51:05:113 JTS-ibdemoDispatcher-43: Starting
+FA 22:51:05:113 JTS-ServiceConnector-39: AuthTimeoutMonitor: timeout=20000
+FA 22:51:05:113 JTS-ServiceConnector-39: AuthTimeoutMonitor: activate
+FA 22:51:05:113 JTS-AuthTimeoutMonitorThread-44: Starting 
+FA 22:51:05:116 JTS-ServiceConnector-39: start ping with 5000 for: JTS-ibdemoServicePreAuthPing-45
+FA 22:51:05:117 JTS-ibdemoServicePreAuthPing-45: Starting
+FA 22:51:05:138 JTS-CCPDispatcher-32: SPLASH Starting application
+FA 22:51:05:138 JTS-CCPDispatcher-32: Processing normal logon 2
+FA 22:51:05:138 JTS-CCPDispatcher-32: Processing normal logon 3
+FA 22:51:05:142 JTS-MDActivityCheckThread-48: Starting
+FA 22:51:05:148 JTS-CCPDispatcher-32: TradeRequests:ExecReportMgr-restoreExecutions: sending trades request for un-initialized storage: date=Mon Apr 29 22:51:05 PDT 2013
+FA 22:51:05:152 JTS-CCPDispatcher-32: TradeDaysMgr - reconnect fillups started.
+FA 22:51:05:153 JTS-RestoreExecutions-50: TradeRequests:ExecReportMgr-restoreExecutions_: trades file not found /Users/kai/IBJts/AtomicTrader/ibGatewayIBJts/darykqwys/Mon.trd
+FA 22:51:05:153 JTS-ExecNotifier-25: Starting
+FA 22:51:05:153 JTS-RestoreExecutions-50: TradeRequests:ReportStorage-sendWholeDayRequest: , requestId=today0, date=Mon Apr 29 22:51:05 PDT 2013, key=Mon
+FA 22:51:05:155 JTS-RestoreExecutions-50: Sending trade request from 20130429-07:00:00 to 20130430-07:00:00
+FA 22:51:05:157 JTS-RestoreExecutions-50: TradeRequests:ExecReportMgr-Clearing Models
+FA 22:51:05:157 JTS-RestoreExecutions-50: TradeRequests:ExecReportMgr-Sending position request
+FA 22:51:05:159 JTS-RestoreExecutions-50: TradeRequests:ExecReportMgr-Sending ledger request
+FA 22:51:05:162 AWT-EventQueue-0: SPLASH Closing screen and saving 6 steps
+FA 22:51:05:203 JTS-CCPDispatcher-32: LOGIN_TIME_MONITOR	 false 22:51:05:517 since start = 10098 thread delay = 1972 global delay = 0 tag=TURN OFF, cls=DelayReporter method=turnOff
+FA 22:51:05:204 JTS-Cleaner-28: Cleaning maps
+FA 22:51:05:205 JTS-CCPDispatcher-32: Current date:20130429 same:true
+FA 22:51:05:205 JTS-CCPDispatcher-32: Current order recovery state:NONE
+FA 22:51:05:209 JTS-CCPDispatcher-32: Re-trying batch requests:[]
+FA 22:51:05:230 JTS-HmdsRouting requestor-47: Requesting compatible routing HISTORICAL_DATA from CompatibleFarmEndPoints [md=useccphost:4000, mdFarm=ibdemo, hmds=useccphost:4000, hmdsFarm=demohmds]
+FA 22:51:05:231 JTS-HmdsRouting requestor-47: HTBP Hot Backup PGL generated:
+:0
+
+FA 22:51:05:231 JTS-HmdsRouting requestor-47: HTBP Usable connections list generated
+:0
+
+FA 22:51:05:231 JTS-HmdsRouting requestor-47: HTBP Main end point set::0 Strategy: SINGLE_HOST
+FA 22:51:05:231 JTS-HmdsRouting requestor-47: Farm demohmds/UNCONNECTED: Creating ServiceConnection for:demohmds
+FA 22:51:05:233 JTS-HmdsRouting requestor-47: Farm demohmds/UNCONNECTED: Adding message to queue
+FA 22:51:05:233 JTS-HmdsRouting requestor-47: Farm demohmds/UNCONNECTED: Starting connection thread
+FA 22:51:05:277 JTS-ServiceConnector-51: Farm demohmds/STARTING: Connecting via ccp conman (demohmds)...
+FA 22:51:05:278 JTS-ServiceConnector-51: Connecting gw1.ibllc.com:4000 timeout=0
+FA 22:51:05:278 JTS-ServiceConnector-51: CONN CALC: Last connection set as now:22:51:05:592
+FA 22:51:05:278 JTS-CCPDispatcher-32: Storage synced: ReportStorage[Mon, today=true]
+FA 22:51:05:350 JTS-ibdemoDispatcher-43: Reconnection time cleared: argClearBackoff=true base=0 range=5000 next=0 disconnected=0
+FA 22:51:05:351 JTS-ibdemoDispatcher-43: AuthTimeoutMonitor: deactivate
+FA 22:51:05:351 JTS-ibdemoDispatcher-43: Farm ibdemo/PRE_CCP: Authenticated via ccp conman(ibdemo)
+FA 22:51:05:351 JTS-ibdemoDispatcher-43: start ping with 60000 for: JTS-ibdemoServicePing-52
+FA 22:51:05:351 JTS-AuthTimeoutMonitorThread-44: Terminating
+FA 22:51:05:351 JTS-ibdemoServicePreAuthPing-45: Terminating
+FA 22:51:05:352 JTS-ibdemoDispatcher-43: Farm ibdemo/CCP: No DirectServiceSites - native background connection attempts skipped
+FA 22:51:05:352 JTS-ibdemoServicePing-52: Starting
+FA 22:51:05:358 JTS-ServiceConnector-51: Connected to gw1.ibllc.com:4000 on local port 0 socket local addrs:port /10.1.10.37:52228
+FA 22:51:05:359 JTS-ServiceConnector-51: Farm demohmds/PRE_CCP: Connected, sending auth
+FA 22:51:05:359 JTS-ServiceConnector-51: Added to valid hosts list: gw1.ibllc.com
+FA 22:51:05:365 JTS-demohmdsListener-53: Starting
+FA 22:51:05:365 JTS-demohmdsDispatcher-54: Starting
+FA 22:51:05:367 JTS-ServiceConnector-51: AuthTimeoutMonitor: deactivate
+FA 22:51:05:367 JTS-ServiceConnector-51: AuthTimeoutMonitor: timeout=20000
+FA 22:51:05:367 JTS-ServiceConnector-51: AuthTimeoutMonitor: activate
+FA 22:51:05:367 JTS-AuthTimeoutMonitorThread-55: Starting 
+FA 22:51:05:367 JTS-demohmdsListener-53: Initial listener buffer size is 65700
+FA 22:51:05:367 JTS-demohmdsListener-53: Capping listener buffer size at 65536
+FA 22:51:05:367 JTS-ServiceConnector-51: start ping with 5000 for: JTS-demohmdsServicePreAuthPing-56
+FA 22:51:05:368 JTS-demohmdsServicePreAuthPing-56: Starting
+FA 22:51:05:411 JTS-CCPDispatcher-32: Lightweight position response received: [DU15146.]
+FA 22:51:05:451 JTS-demohmdsDispatcher-54: processing 35=S message - NSAuthorizationStart. params=7;520;1;32;-1;
+FA 22:51:05:451 JTS-demohmdsDispatcher-54:  NS_AUTH_START config=32 version=7 pwd=0 soft=2 token=0 initialTokenType=SOFT
+FA 22:51:05:451 JTS-demohmdsDispatcher-54: authenticating to mkt farm with session token
+FA 22:51:05:451 JTS-demohmdsDispatcher-54: Starting soft token Authentication
+FA 22:51:05:474 JTS-CCPDispatcher-32: Received live orders end marker.
+FA 22:51:05:488 JTS-CCPDispatcher-32: CM Received account reset event for DU15146. UNIVERSAL
+FA 22:51:05:490 JTS-CCPDispatcher-32: CM IB PORT DU15146./2/404267176: Received account reset event
+FA 22:51:05:554 JTS-demohmdsDispatcher-54: Received MD auth msg classid = 1
+FA 22:51:05:554 JTS-demohmdsDispatcher-54: Receiver: 772
+FA 22:51:05:603 JTS-ibdemoDispatcher-43: Compatible routing data:
+8=O9=008735=T6556=1NSE,STK,Frz,*,-1,ibdemo100,4000,ibdemo,r;*,*,*,*,-1,ibdemo100,4000,ibdemo,r
+FA 22:51:05:604 JTS-ibdemoDispatcher-43: Farm ibdemo/CCP: Stopping connection, keeping socket
+FA 22:51:05:604 JTS-ibdemoDispatcher-43: Disconnecting gw1.ibllc.com:4000 with status DISCONNECT_BY_DESIGN
+FA 22:51:05:605 JTS-ibdemoDispatcher-43: AuthTimeoutMonitor: deactivate
+FA 22:51:05:606 JTS-ibdemoServicePing-52: Terminating
+FA 22:51:05:613 JTS-ibdemoDispatcher-43: Send ping for transfer socket:ibdemo at 1367301065927
+FA 22:51:05:616 JTS-Disconnected-58: Farm ibdemo/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_BY_DESIGN
+FA 22:51:05:616 JTS-Disconnected-58: Farm ibdemo/UNCONNECTED: Not resetting
+FA 22:51:05:622 JTS-ibdemoDispatcher-43: Terminating
+FA 22:51:05:624 JTS-ForwardRouting-MARKET_DATA-60: Save socket:ibdemo gw1.ibllc.com:4000
+FA 22:51:05:657 JTS-ForwardRouting-MARKET_DATA-60: handleCompatibleRouting MARKET_DATA compmode=true ready=false farm=ibdemo
+FA 22:51:05:659 JTS-AsyncNonLocked-27: Handle compatible routing:MARKET_DATA table:
+NSE,STK,Frz,*,-1,ibdemo100,4000,ibdemo,r;*,*,*,*,-1,ibdemo100,4000,ibdemo,r
+FA 22:51:05:742 JTS-demohmdsDispatcher-54: Received MD auth msg classid = 1
+FA 22:51:05:742 JTS-demohmdsDispatcher-54: Receiver: 772
+FA 22:51:05:742 JTS-demohmdsDispatcher-54: Received Result
+FA 22:51:05:742 JTS-demohmdsDispatcher-54: Passed session token authentication.
+FA 22:51:05:776 JTS-CCPDispatcher-32: CM IB PORT DU15146./2/404267176: Finished loading portfolio
+FA 22:51:05:779 JTS-demohmdsDispatcher-54: Reconnection time cleared: argClearBackoff=true base=0 range=5000 next=0 disconnected=0
+FA 22:51:05:779 JTS-demohmdsDispatcher-54: AuthTimeoutMonitor: deactivate
+FA 22:51:05:779 JTS-demohmdsDispatcher-54: Farm demohmds/PRE_CCP: Authenticated via ccp conman(demohmds)
+FA 22:51:05:779 JTS-demohmdsDispatcher-54: start ping with 60000 for: JTS-demohmdsServicePing-62
+FA 22:51:05:780 JTS-AuthTimeoutMonitorThread-55: Terminating
+FA 22:51:05:780 JTS-demohmdsServicePreAuthPing-56: Terminating
+FA 22:51:05:791 JTS-demohmdsDispatcher-54: Farm demohmds/CCP: No DirectServiceSites - native background connection attempts skipped
+FA 22:51:05:791 JTS-demohmdsServicePing-62: Starting
+FA 22:51:05:850 JTS-ibdemoListener-42: Terminating
+FA 22:51:05:894 JTS-demohmdsDispatcher-54: Compatible routing data:
+8=O9=007235=T6556=2*,*,DayChart|EODChart|ScanTop,*,-1,ibdemo100,4000,demohmds,r
+FA 22:51:05:895 JTS-demohmdsDispatcher-54: Farm demohmds/CCP: Stopping connection, keeping socket
+FA 22:51:05:895 JTS-demohmdsDispatcher-54: Disconnecting gw1.ibllc.com:4000 with status DISCONNECT_BY_DESIGN
+FA 22:51:05:895 JTS-demohmdsDispatcher-54: AuthTimeoutMonitor: deactivate
+FA 22:51:05:895 JTS-demohmdsServicePing-62: Terminating
+FA 22:51:05:903 JTS-demohmdsDispatcher-54: Send ping for transfer socket:demohmds at 1367301066217
+FA 22:51:05:904 JTS-demohmdsDispatcher-54: Terminating
+FA 22:51:05:904 JTS-Disconnected-63: Farm demohmds/UNCONNECTED: Lost active connection with disconnect status DISCONNECT_BY_DESIGN
+FA 22:51:05:904 JTS-Disconnected-63: Farm demohmds/UNCONNECTED: Not resetting
+FA 22:51:05:907 JTS-ForwardRouting-HISTORICAL_DATA-65: Save socket:demohmds gw1.ibllc.com:4000
+FA 22:51:05:907 JTS-ForwardRouting-HISTORICAL_DATA-65: handleCompatibleRouting HISTORICAL_DATA compmode=true ready=false farm=demohmds
+FA 22:51:05:909 JTS-AsyncNonLocked-27: Handle compatible routing:HISTORICAL_DATA table:
+*,*,DayChart|EODChart|ScanTop,*,-1,ibdemo100,4000,demohmds,r
+FA 22:51:05:990 JTS-demohmdsListener-53: Terminating
+FA 22:51:13:000 JTS-CCPDispatcher-32: Setting time offset to -475 diff -161
+22:51:14:221 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 22:51:15:455 JTS-TransferPing-ibdemo-59: Send ping for transfer socket:ibdemo at 1367301075930
+FA 22:51:15:744 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301076219
+FA 22:51:19:249 Exercise-RndGenerator: Option Exercise SSL security init started
+FA 22:51:19:261 JTS-SocketListener-41: Created API exercise ContractFactory
+FA 22:51:19:264 JTS-SocketListener-41: ArEServer: Adding 440019538 with id 0
+FA 22:51:19:264 JTS-SocketListener-41: eServersChanged: 1
+FA 22:51:19:267 JTS-EServerSocket-68: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 22:51:19:268 JTS-EServerSocket-68: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 22:51:19:268 JTS-EServerSocket-68: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 22:51:19:292 JTS-EServerSocketNotifier-67: Starting
+FA 22:51:19:347 JTS-EServerSocket-68: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 22:51:19:351 JTS-EServerSocket-68: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 22:51:19:357 JTS-EServerSocket-68: CM setting requested API account spec to DU15146.(API)
+FA 22:51:19:357 JTS-EServerSocket-68: CM Sending current account image DU15146 to API
+remove Client 100
+FA 22:51:19:660 Exercise-RndGenerator: Option Exercise SSL security init done
+FA 22:51:19:726 JTS-Liquid Hours Requestor-71: XML  Sending query   reqId=SubMsgXMLQuery11  query=6 all mid=BEST:NYSE(ARCA)/STK|p44020 xmlQueryParamPair=null
+FA 22:51:19:762 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=null,lastMktDataTag=null,deepTag=null,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:51:19:771 JTS-Async-26: HTBP Hot Backup PGL generated:
+:0
+
+FA 22:51:19:771 JTS-Async-26: HTBP Usable connections list generated
+:0
+
+FA 22:51:19:771 JTS-Async-26: HTBP Main end point set::0 Strategy: SINGLE_HOST
+FA 22:51:19:771 JTS-Async-26: Farm ibdemo/UNCONNECTED: Creating ServiceConnection for:ibdemo
+FA 22:51:19:772 JTS-Async-26: Farm ibdemo/UNCONNECTED: Starting connection thread
+FA 22:51:19:772 JTS-Async-26: Farm ibdemo/STARTING: Adding message to queue
+FA 22:51:19:773 JTS-ServiceConnector-72: Farm ibdemo/STARTING: Connecting via ccp conman (ibdemo)...
+FA 22:51:19:773 JTS-ServiceConnector-72: Reuse socket:ibdemo gw1.ibllc.com:4000
+FA 22:51:19:773 JTS-ServiceConnector-72: Connecting gw1.ibllc.com:4000 timeout=0
+FA 22:51:19:773 JTS-ServiceConnector-72: Connected to gw1.ibllc.com:4000 on local port 0 socket local addrs:port /10.1.10.37:52227
+FA 22:51:19:773 JTS-ServiceConnector-72: Farm ibdemo/PRE_CCP: Connected, sending auth
+FA 22:51:19:773 JTS-ServiceConnector-72: Added to valid hosts list: gw1.ibllc.com
+FA 22:51:19:810 JTS-ibdemoListener-73: Starting
+FA 22:51:19:810 JTS-ibdemoListener-73: Initial listener buffer size is 65700
+FA 22:51:19:810 JTS-ibdemoListener-73: Capping listener buffer size at 65536
+FA 22:51:19:827 JTS-ibdemoDispatcher-74: Starting
+FA 22:51:19:827 JTS-ServiceConnector-72: Reconnection time cleared: argClearBackoff=true base=0 range=5000 next=0 disconnected=0
+FA 22:51:19:827 JTS-ServiceConnector-72: Farm ibdemo/PRE_CCP: Authenticated via ccp conman(ibdemo)
+FA 22:51:19:828 JTS-ServiceConnector-72: start ping with 60000 for: JTS-ibdemoServicePing-75
+FA 22:51:19:828 JTS-ibdemoServicePing-75: Starting
+FA 22:51:19:829 JTS-ServiceConnector-72: Farm ibdemo/CCP: No DirectServiceSites - native background connection attempts skipped
+FA 22:51:19:910 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:19:912 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:19:964 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=5,lastMktDataTag=6,deepTag=null,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:51:19:965 JTS-CCPDispatcher-32: XML  Received query response  reqId=SubMsgXMLQuery11
+FA 22:51:20:156 JTS-Liquid Hours Requestor-71: XML  Sending query   reqId=SubMsgXMLQuery12  query=6 all mid=BEST:NYSE(NASDAQ)/STK|p44020 xmlQueryParamPair=null
+FA 22:51:20:240 JTS-CCPDispatcher-32: XML  Received query response  reqId=SubMsgXMLQuery12
+FA 22:51:20:257 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 22:51:20:258 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:20:259 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:20:259 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:20:259 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:20:259 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:20:259 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:22:233 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:51:22:894 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:51:23:764 JTS-CCPDispatcher-32: CM Received API account reset event for DU15146.
+FA 22:51:23:766 JTS-CCPDispatcher-32: CM API PORT DU15146./2/3162309: Received account reset event
+FA 22:51:24:009 JTS-Async-26: CM API PORT DU15146./2/3162309: Finished loading portfolio
+FA 22:51:25:744 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301086219
+FA 22:51:35:744 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301096219
+FA 22:51:45:691 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 22:51:45:744 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301106219
+FA 22:51:48:340 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 22:51:48:716 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:51:49:716 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:51:55:744 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301116219
+FA 22:51:57:856 JTS-EServerSocket-68: [100:46:67:1:0:0:0:ERR] Socket connection for client{100} has closed. 
+FA 22:51:57:856 JTS-EServerSocket-68: Connection reset
+FA 22:51:57:857 JTS-EServerSocketNotifier-67: Terminating
+FA 22:51:57:867 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [158.16], m_ask [158.17], m_last [158.16], m_lastTimeStamp [1367301118],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [342], m_askSize [117], m_lastSize [1], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=2,lastMktDataTag=3,deepTag=1,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:51:57:869 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:51:57:869 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:51:57:869 JTS-EServerSocket-68: ArEServer: Removing 440019538 with id 100
+FA 22:51:57:869 JTS-EServerSocket-68: eServersChanged: 0
+FA 22:51:57:871 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=5,lastMktDataTag=6,deepTag=8,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:51:57:871 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 22:51:57:872 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:57:872 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:57:873 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:57:873 JTS-EServerSocket-68: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 22:51:57:873 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:57:875 JTS-EWriter1-69: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 22:51:57:877 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:51:57:878 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:51:58:169 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:169 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:169 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:169 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:250 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:51:58:250 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:250 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:51:58:250 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:51:58:250 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:51:58:475 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:51:58:475 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:52:05:042 JTS-Cleaner-28: Cleaning maps
+FA 22:52:05:743 JTS-TransferPing-demohmds-64: Send ping for transfer socket:demohmds at 1367301126218
+FA 22:52:05:744 JTS-Fuse-sd-66: Reset transferrable socket:demohmds gw1.ibllc.com:4000
+FA 22:52:19:373 JTS-SocketListener-41: ArEServer: Adding 955650599 with id 0
+FA 22:52:19:373 JTS-SocketListener-41: eServersChanged: 1
+FA 22:52:19:377 JTS-EServerSocket-78: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 22:52:19:377 JTS-EServerSocket-78: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 22:52:19:377 JTS-EServerSocket-78: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 22:52:19:377 JTS-EServerSocketNotifier-77: Starting
+FA 22:52:19:379 JTS-EServerSocket-78: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 22:52:19:380 JTS-EServerSocket-78: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 22:52:19:381 JTS-EServerSocket-78: CM setting requested API account spec to DU15146.(API)
+FA 22:52:19:382 JTS-EServerSocket-78: CM Sending current account image DU15146 to API
+remove Client 100
+FA 22:52:19:551 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [310], m_askSize [86], m_lastSize [0], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=2,lastMktDataTag=3,deepTag=1,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:52:19:556 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=5,lastMktDataTag=6,deepTag=8,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:19:703 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:20:064 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:20:858 JTS-EServerSocket-78: CANCELSOURCE SEL
+FA 22:52:21:014 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:52:21:015 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:52:26:688 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:52:26:691 JTS-EServerSocket-78: CANCELSOURCE SEL
+FA 22:52:26:779 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 22:52:26:780 JTS-CCPDispatcher-32: Order Canceled - reason:
+FA 22:52:37:827 JTS-EServerSocket-78: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+FA 22:52:37:827 JTS-EServerSocket-78: null
+FA 22:52:37:828 JTS-EServerSocketNotifier-77: Terminating
+FA 22:52:37:829 JTS-EServerSocket-78: ArEServer: Removing 955650599 with id 100
+FA 22:52:37:829 JTS-EServerSocket-78: eServersChanged: 0
+FA 22:52:37:829 JTS-EServerSocket-78: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 22:52:37:830 JTS-EWriter2-79: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 22:52:37:831 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [200.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=34,lastMktDataTag=35,deepTag=33,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:52:37:832 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:52:37:832 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=38,lastMktDataTag=39,deepTag=36,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:52:37:833 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:52:37:833 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:52:38:025 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:52:38:025 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:52:38:025 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:52:38:025 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:52:38:025 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:52:38:275 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:52:38:275 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:53:05:042 JTS-Cleaner-28: Cleaning maps
+FA 22:53:44:690 JTS-SocketListener-41: ArEServer: Adding 277305168 with id 0
+FA 22:53:44:690 JTS-SocketListener-41: eServersChanged: 1
+FA 22:53:44:691 JTS-EServerSocket-83: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 22:53:44:691 JTS-EServerSocket-83: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 22:53:44:691 JTS-EServerSocket-83: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 22:53:44:692 JTS-EServerSocketNotifier-82: Starting
+FA 22:53:44:693 JTS-EServerSocket-83: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 22:53:44:695 JTS-EServerSocket-83: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 22:53:44:696 JTS-EServerSocket-83: CM setting requested API account spec to DU15146.(API)
+FA 22:53:44:696 JTS-EServerSocket-83: CM Sending current account image DU15146 to API
+remove Client 100
+FA 22:53:45:242 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [887], m_askSize [1296], m_lastSize [3], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=65,lastMktDataTag=66,deepTag=36,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:53:45:930 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:53:45:931 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:54:00:294 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=34,lastMktDataTag=35,deepTag=33,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:00:456 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:05:042 JTS-Cleaner-28: Cleaning maps
+FA 22:54:09:936 JTS-EServerSocket-83: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+FA 22:54:09:937 JTS-EServerSocket-83: null
+FA 22:54:09:939 JTS-EServerSocket-83: ArEServer: Removing 277305168 with id 100
+FA 22:54:09:939 JTS-EServerSocket-83: eServersChanged: 0
+FA 22:54:09:939 JTS-EServerSocket-83: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 22:54:09:940 JTS-EWriter3-84: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 22:54:09:940 JTS-EServerSocketNotifier-82: Terminating
+FA 22:54:09:943 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=65,lastMktDataTag=66,deepTag=68,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:54:09:944 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:54:09:944 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:54:09:945 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=82,lastMktDataTag=83,deepTag=81,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:54:09:945 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:54:09:945 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:54:09:948 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:09:949 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:09:949 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:09:949 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:54:09:949 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:09:949 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:54:10:027 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:10:027 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:54:10:027 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:54:10:251 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:55:05:043 JTS-Cleaner-28: Cleaning maps
+FA 22:55:54:074 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=42,326KB HeapUsage: Max=126,912KB used=84,585KB committed=126,912KB NonHeapUsage: Max=133,120KB used=59,524KB committed=70,604KB
+FA 22:55:55:078 JTS-DeadlockMonitor-2: CPU:cur=0.07% avg=1.50% 30 min avg=1.50% 5 min avg=1.50% 1 min avg=0.09%
+FA 22:55:55:078 JTS-DeadlockMonitor-2: GC:called=40 times CPU used=0.18%
+FA 22:55:55:078 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.01% 30 min avg=0.01% 5 min avg=0.01% 1 min avg=0.00%
+FA 22:56:00:000 JTS-CCPDispatcher-32: Setting time offset to -1025 diff -550
+FA 22:56:00:000 JTS-CCPDispatcher-32: Lightweight position response received: [DU15146.]
+FA 22:56:04:493 JTS-Cleaner-28: Cleaning maps
+22:56:29:548 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+22:56:36:794 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 22:56:38:524 JTS-SocketListener-41: ArEServer: Adding 2020200416 with id 0
+FA 22:56:38:524 JTS-SocketListener-41: eServersChanged: 1
+FA 22:56:38:525 JTS-EServerSocket-89: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 22:56:38:525 JTS-EServerSocket-89: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 22:56:38:525 JTS-EServerSocket-89: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 22:56:38:526 JTS-EServerSocketNotifier-88: Starting
+FA 22:56:38:527 JTS-EServerSocket-89: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 22:56:38:529 JTS-EServerSocket-89: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 22:56:38:530 JTS-EServerSocket-89: CM setting requested API account spec to DU15146.(API)
+FA 22:56:38:530 JTS-EServerSocket-89: CM Sending current account image DU15146 to API
+remove Client 100
+FA 22:56:38:701 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=97,lastMktDataTag=98,deepTag=68,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:38:772 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [681], m_askSize [444], m_lastSize [0], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=100,lastMktDataTag=101,deepTag=81,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:39:404 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 22:56:39:404 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:39:404 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:39:404 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:39:405 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:39:405 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:39:405 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:39:406 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:40:040 JTS-EServerSocket-89: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+FA 22:56:40:040 JTS-EServerSocket-89: null
+FA 22:56:40:041 JTS-EServerSocketNotifier-88: Terminating
+FA 22:56:40:042 JTS-EServerSocket-89: ArEServer: Removing 2020200416 with id 100
+FA 22:56:40:042 JTS-EServerSocket-89: eServersChanged: 0
+FA 22:56:40:042 JTS-EServerSocket-89: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 22:56:40:044 JTS-EWriter4-90: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 22:56:40:045 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=100,lastMktDataTag=101,deepTag=104,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:40:046 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:40:046 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [69.86], m_ask [69.89], m_last [69.87], m_lastTimeStamp [1367301400],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [930], m_askSize [1159], m_lastSize [4], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=97,lastMktDataTag=98,deepTag=102,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:40:047 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:40:047 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:40:064 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 22:56:40:065 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:40:270 JTS-CCPDispatcher-32: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:40:292 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:40:292 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:40:292 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:40:352 JTS-CCPDispatcher-32: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 22:56:43:139 JTS-SocketListener-41: ArEServer: Adding 2083503570 with id 0
+FA 22:56:43:139 JTS-SocketListener-41: eServersChanged: 1
+FA 22:56:43:140 JTS-EServerSocket-92: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 22:56:43:140 JTS-EServerSocket-92: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 22:56:43:140 JTS-EServerSocket-92: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 22:56:43:143 JTS-EServerSocketNotifier-91: Starting
+FA 22:56:43:144 JTS-EServerSocket-92: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 22:56:43:145 JTS-EServerSocket-92: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 22:56:43:145 JTS-EServerSocket-92: CM setting requested API account spec to DU15146.(API)
+FA 22:56:43:146 JTS-EServerSocket-92: CM Sending current account image DU15146 to API
+remove Client 100
+FA 22:56:43:355 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [137], m_askSize [638], m_lastSize [0], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [200.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=129,lastMktDataTag=130,deepTag=104,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:43:359 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [69.89], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [892], m_askSize [1116], m_lastSize [0], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=97,lastMktDataTag=98,deepTag=102,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:56:43:439 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:56:43:636 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:57:04:493 JTS-Cleaner-28: Cleaning maps
+FA 22:57:05:000 JTS-CCPDispatcher-32: Setting time offset to -539 diff 486
+FA 22:57:13:077 JTS-EServerSocket-92: [100:46:67:1:0:0:0:ERR] Socket connection for client{100} has closed. 
+FA 22:57:13:077 JTS-EServerSocket-92: Connection reset
+FA 22:57:13:078 JTS-EServerSocket-92: ArEServer: Removing 2083503570 with id 100
+FA 22:57:13:078 JTS-EServerSocket-92: eServersChanged: 0
+FA 22:57:13:079 JTS-EServerSocket-92: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 22:57:13:079 JTS-EWriter5-93: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 22:57:13:080 JTS-EServerSocketNotifier-91: Terminating
+FA 22:57:13:080 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [158.16], m_ask [158.17], m_last [158.16], m_lastTimeStamp [1367301432],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [252], m_askSize [900], m_lastSize [4], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [200.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=133,lastMktDataTag=134,deepTag=131,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:57:13:081 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 22:57:13:081 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=191763705  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [69.86], m_ask [69.88], m_last [69.86], m_lastTimeStamp [1367301433],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [847], m_askSize [1200], m_lastSize [1], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@b35fb1c  cusip=  dataFeed= mktDataTag=136,lastMktDataTag=137,deepTag=132,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 22:57:13:082 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 22:57:13:082 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 22:58:04:980 JTS-Cleaner-28: Cleaning maps
+FA 22:59:04:980 JTS-Cleaner-28: Cleaning maps
+FA 23:00:04:980 JTS-Cleaner-28: Cleaning maps
+FA 23:00:54:064 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=47,907KB HeapUsage: Max=126,912KB used=79,004KB committed=126,912KB NonHeapUsage: Max=133,120KB used=59,674KB committed=70,604KB
+FA 23:00:55:067 JTS-DeadlockMonitor-2: CPU:cur=0.08% avg=0.87% 30 min avg=0.87% 5 min avg=0.23% 1 min avg=0.06%
+FA 23:00:55:068 JTS-DeadlockMonitor-2: GC:called=41 times CPU used=0.09%
+FA 23:00:55:068 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+FA 23:01:04:981 JTS-Cleaner-28: Cleaning maps
+FA 23:01:13:000 JTS-CCPDispatcher-32: Setting time offset to -448 diff 91
+FA 23:01:13:000 JTS-CCPDispatcher-32: Setting time offset to -448 diff 0
+FA 23:01:43:081 JTS-CCPPing-23: Warning: not received heartbeat at 646000 elapsed:11000
+FA 23:02:05:072 JTS-Cleaner-28: Cleaning maps
+FA 23:02:06:453 JTS-CCPDispatcher-32: Lightweight position response received: [DU15146.]
+FA 23:03:05:073 JTS-Cleaner-28: Cleaning maps
+FA 23:03:05:074 JTS-Cleaner-28: DeepRecord.clean called for 43661924 on SMART
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:03:05:074 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:04:02:212 JTS-CCPPing-23: Warning: not received heartbeat at 785000 elapsed:11000
+FA 23:04:05:074 JTS-Cleaner-28: Cleaning maps
+FA 23:04:52:261 JTS-CCPPing-23: Warning: not received heartbeat at 835000 elapsed:11000
+FA 23:05:05:074 JTS-Cleaner-28: Cleaning maps
+FA 23:05:12:279 JTS-CCPPing-23: Warning: not received heartbeat at 855000 elapsed:11000
+FA 23:05:54:204 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=44,293KB HeapUsage: Max=126,912KB used=82,618KB committed=126,912KB NonHeapUsage: Max=133,120KB used=59,712KB committed=70,604KB
+FA 23:05:55:207 JTS-DeadlockMonitor-2: CPU:cur=0.04% avg=0.60% 30 min avg=0.60% 5 min avg=0.05% 1 min avg=0.06%
+FA 23:05:55:207 JTS-DeadlockMonitor-2: GC:called=41 times CPU used=0.06%
+FA 23:05:55:208 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+FA 23:06:05:075 JTS-Cleaner-28: Cleaning maps
+FA 23:06:22:342 JTS-CCPPing-23: Warning: not received heartbeat at 925000 elapsed:11000
+FA 23:07:05:076 JTS-Cleaner-28: Cleaning maps
+FA 23:08:00:498 JTS-SocketListener-41: ArEServer: Adding 1353279972 with id 0
+FA 23:08:00:498 JTS-SocketListener-41: eServersChanged: 1
+FA 23:08:00:503 JTS-EServerSocket-106: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 23:08:00:503 JTS-EServerSocket-106: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 23:08:00:503 JTS-EServerSocket-106: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 23:08:00:506 JTS-EServerSocketNotifier-105: Starting
+FA 23:08:00:507 JTS-EServerSocket-106: [100:46:67:1:0:0:0:SYS] Client ID is 100
+remove Client 100
+FA 23:08:00:508 JTS-EServerSocket-106: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 23:08:00:508 JTS-EServerSocket-106: CM setting requested API account spec to DU15146.(API)
+FA 23:08:00:509 JTS-EServerSocket-106: CM Sending current account image DU15146 to API
+FA 23:08:01:000 JTS-CCPDispatcher-32: Setting time offset to -64 diff 384
+FA 23:08:01:058 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=null,lastMktDataTag=null,deepTag=null,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:01:084 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [200.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=167,lastMktDataTag=168,deepTag=131,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:01:165 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:01:166 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:01:738 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:03:554 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:03:555 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:04:477 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 23:08:05:461 JTS-Cleaner-28: Cleaning maps
+FA 23:08:05:649 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 23:08:06:641 JTS-EServerSocket-106: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+FA 23:08:06:641 JTS-EServerSocket-106: null
+FA 23:08:06:644 JTS-EServerSocket-106: ArEServer: Removing 1353279972 with id 100
+FA 23:08:06:644 JTS-EServerSocket-106: eServersChanged: 0
+FA 23:08:06:644 JTS-EServerSocket-106: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 23:08:06:646 JTS-EServerSocketNotifier-105: Terminating
+FA 23:08:06:648 JTS-EWriter6-107: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 23:08:06:649 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [300.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=167,lastMktDataTag=168,deepTag=169,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:06:649 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:06:649 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=164,lastMktDataTag=165,deepTag=163,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:06:650 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 23:08:06:650 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:06:650 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:06:652 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:06:652 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:06:653 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:06:653 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:06:730 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:06:730 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+23:08:15:908 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:08:20:860 JTS-SocketListener-41: ArEServer: Adding 115530362 with id 0
+FA 23:08:20:860 JTS-SocketListener-41: eServersChanged: 1
+FA 23:08:20:862 JTS-EServerSocket-110: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 23:08:20:862 JTS-EServerSocket-110: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 23:08:20:862 JTS-EServerSocket-110: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 23:08:20:865 JTS-EServerSocketNotifier-109: Starting
+FA 23:08:20:866 JTS-EServerSocket-110: [100:46:67:1:0:0:0:SYS] Client ID is 100
+addLogConsole Client 100
+FA 23:08:20:873 JTS-EServerSocket-110: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 23:08:20:874 JTS-EServerSocket-110: CM setting requested API account spec to DU15146.(API)
+FA 23:08:20:874 JTS-EServerSocket-110: CM Sending current account image DU15146 to API
+FA 23:08:21:137 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [200.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=167,lastMktDataTag=168,deepTag=169,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:21:220 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 23:08:21:220 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:21:220 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:21:220 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:21:221 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:21:221 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:21:221 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:21:221 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=164,lastMktDataTag=165,deepTag=163,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:21:460 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:22:521 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:22:531 JTS-EServerSocket-110: CANCELSOURCE SEL
+FA 23:08:22:617 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:22:619 JTS-CCPDispatcher-32: Order Canceled - reason:
+23:08:22:788 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:08:23:577 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:23:744 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:08:27:965 JTS-EServerSocket-110: [100:46:67:1:0:0:0:ERR] Socket connection for client{100} has closed. 
+FA 23:08:27:965 JTS-EServerSocket-110: Connection reset
+FA 23:08:27:966 JTS-EServerSocketNotifier-109: Terminating
+FA 23:08:27:967 JTS-EServerSocket-110: ArEServer: Removing 115530362 with id 100
+FA 23:08:27:967 JTS-EServerSocket-110: eServersChanged: 0
+FA 23:08:27:967 JTS-EServerSocket-110: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 23:08:27:969 JTS-EWriter7-111: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 23:08:27:970 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [300.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=196,lastMktDataTag=197,deepTag=195,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:27:971 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:08:27:971 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=200,lastMktDataTag=201,deepTag=199,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:08:27:972 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:08:27:972 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:08:27:975 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:27:975 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:27:976 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:27:976 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:28:179 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:08:28:180 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 23:08:28:180 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 756733, SMART, SPY
+23:08:29:394 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+23:08:33:963 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:09:04:878 JTS-CCPPing-23: Warning: not received heartbeat at 1087000 elapsed:11000
+FA 23:09:05:461 JTS-Cleaner-28: Cleaning maps
+FA 23:09:52:328 JTS-SocketListener-41: ArEServer: Adding 1979313056 with id 0
+FA 23:09:52:328 JTS-SocketListener-41: eServersChanged: 1
+FA 23:09:52:334 JTS-EServerSocket-114: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 23:09:52:334 JTS-EServerSocket-114: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 23:09:52:334 JTS-EServerSocket-114: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 23:09:52:335 JTS-EServerSocketNotifier-113: Starting
+FA 23:09:52:338 JTS-EServerSocket-114: [100:46:67:1:0:0:0:SYS] Client ID is 100
+addLogConsole Client 100
+FA 23:09:52:348 JTS-EServerSocket-114: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 23:09:52:349 JTS-EServerSocket-114: CM setting requested API account spec to DU15146.(API)
+FA 23:09:52:349 JTS-EServerSocket-114: CM Sending current account image DU15146 to API
+FA 23:09:52:733 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [300.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=196,lastMktDataTag=197,deepTag=195,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:09:52:814 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=200,lastMktDataTag=201,deepTag=199,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:09:52:844 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:09:53:169 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+23:09:55:536 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:10:00:591 JTS-EServerSocket-114: [100:46:67:1:0:0:0:ERR] Socket connection for client{100} has closed. 
+FA 23:10:00:591 JTS-EServerSocket-114: Connection reset
+FA 23:10:00:592 JTS-EServerSocket-114: ArEServer: Removing 1979313056 with id 100
+FA 23:10:00:592 JTS-EServerSocket-114: eServersChanged: 0
+FA 23:10:00:593 JTS-EServerSocket-114: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 23:10:00:593 JTS-EServerSocketNotifier-113: Terminating
+FA 23:10:00:622 JTS-EWriter8-115: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 23:10:00:624 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [158.23], m_ask [158.25], m_last [158.22], m_lastTimeStamp [1367302200],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [101], m_askSize [360], m_lastSize [2], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [400.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=228,lastMktDataTag=229,deepTag=227,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:10:00:625 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:10:00:625 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:10:00:626 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [69.79], m_ask [69.81], m_last [69.79], m_lastTimeStamp [1367302200],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [748], m_askSize [1012], m_lastSize [6], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=232,lastMktDataTag=233,deepTag=231,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:10:00:626 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:10:00:626 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:10:00:632 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:10:00:632 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:10:00:632 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:10:00:771 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:10:05:461 JTS-Cleaner-28: Cleaning maps
+FA 23:10:54:639 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=36,434KB HeapUsage: Max=126,912KB used=90,478KB committed=126,912KB NonHeapUsage: Max=133,120KB used=60,035KB committed=70,604KB
+FA 23:10:55:643 JTS-DeadlockMonitor-2: CPU:cur=0.13% avg=0.52% 30 min avg=0.52% 5 min avg=0.28% 1 min avg=0.38%
+FA 23:10:55:643 JTS-DeadlockMonitor-2: GC:called=42 times CPU used=0.05%
+FA 23:10:55:643 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+FA 23:11:05:461 JTS-Cleaner-28: Cleaning maps
+FA 23:11:13:000 JTS-CCPDispatcher-32: Setting time offset to -285 diff -221
+FA 23:11:13:000 JTS-CCPDispatcher-32: Setting time offset to -285 diff 0
+FA 23:12:05:240 JTS-Cleaner-28: Cleaning maps
+23:12:38:793 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:13:05:240 JTS-Cleaner-28: Cleaning maps
+23:13:09:023 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:13:20:956 JTS-SocketListener-41: ArEServer: Adding 404048817 with id 0
+FA 23:13:20:956 JTS-SocketListener-41: eServersChanged: 1
+FA 23:13:20:957 JTS-EServerSocket-122: [0:0:67:1:0:0:0:SYS] Starting new conversation with client on /127.0.0.1
+FA 23:13:20:958 JTS-EServerSocket-122: [0:46:67:1:0:0:0:SYS] TWS socket server version is 67
+FA 23:13:20:958 JTS-EServerSocket-122: [0:46:67:1:0:0:0:SYS] Client version is 46
+FA 23:13:20:958 JTS-EServerSocketNotifier-121: Starting
+FA 23:13:20:960 JTS-EServerSocket-122: [100:46:67:1:0:0:0:SYS] Client ID is 100
+FA 23:13:20:963 JTS-EServerSocket-122: [100:46:67:1:0:0:0:SYS]  Setting log level to - WARN.
+FA 23:13:20:963 JTS-EServerSocket-122: CM setting requested API account spec to DU15146.(API)
+FA 23:13:20:963 JTS-EServerSocket-122: CM Sending current account image DU15146 to API
+addLogConsole Client 100
+FA 23:13:21:132 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [895], m_askSize [1132], m_lastSize [5], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=232,lastMktDataTag=233,deepTag=231,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:13:21:135 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [undefined], m_ask [undefined], m_last [undefined], m_lastTimeStamp [0],m_lastAttribs [-1],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [0], m_askSize [0], m_lastSize [0], m_bidEligible [-1], m_askEligible [-1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [400.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=228,lastMktDataTag=229,deepTag=227,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 43661924 on SMART
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:21:285 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: DeepRecord.clean called for 756733 on SMART
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:21:470 JTS-ibdemoDispatcher-74: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:22:156 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for BID: Stock (ARCA)
+FA 23:13:24:000 JTS-CCPDispatcher-32: Setting time offset to -1022 diff -737
+FA 23:13:24:001 JTS-CCPDispatcher-32: Lightweight position response received: [DU15146.]
+FA 23:13:24:178 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 23:13:32:460 JTS-EServerSocket-122: CANCELSOURCE SEL
+FA 23:13:32:546 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+FA 23:13:32:546 JTS-CCPDispatcher-32: Order Canceled - reason:
+23:13:40:731 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:13:42:226 JTS-EServerSocket-122: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+FA 23:13:42:226 JTS-EServerSocket-122: null
+FA 23:13:42:227 JTS-EServerSocketNotifier-121: Terminating
+FA 23:13:42:227 JTS-EServerSocket-122: ArEServer: Removing 404048817 with id 100
+FA 23:13:42:227 JTS-EServerSocket-122: eServersChanged: 0
+FA 23:13:42:228 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1020356112  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [158.08], m_ask [158.09], m_last [158.09], m_lastTimeStamp [1367302422],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [140], m_askSize [538], m_lastSize [5], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [500.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@761da8fc  cusip=  dataFeed= mktDataTag=264,lastMktDataTag=265,deepTag=262,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:13:42:229 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+FA 23:13:42:229 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=1166557977  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [69.73], m_ask [69.76], m_last [69.75], m_lastTimeStamp [1367302422],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [676], m_askSize [881], m_lastSize [7], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@74ed41f8  cusip=  dataFeed= mktDataTag=260,lastMktDataTag=261,deepTag=259,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+FA 23:13:42:230 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:13:42:230 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:13:42:231 JTS-EServerSocket-122: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+FA 23:13:42:233 JTS-EWriter9-123: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+FA 23:13:42:426 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:42:426 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:42:426 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:42:426 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:42:676 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:42:676 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+FA 23:13:51:322 AWT-EventQueue-0: Received deep data for unsubscribed contract 756733, SMART, SPY
+FA 23:14:04:504 JTS-Cleaner-28: Cleaning maps
+23:14:18:295 IBController: detected frame entitled: IB Gateway.  API Account: edemo; event=Activated
+FA 23:15:04:505 JTS-Cleaner-28: Cleaning maps
+FA 23:15:04:505 JTS-Cleaner-28: DeepRecord.clean called for 43661924 on SMART
+FA 23:15:04:505 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:15:04:506 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:15:04:506 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:15:04:506 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:15:04:506 JTS-Cleaner-28: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+FA 23:15:04:506 JTS-Cleaner-28: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+FA 23:15:53:739 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=23,562KB HeapUsage: Max=126,912KB used=103,349KB committed=126,912KB NonHeapUsage: Max=133,120KB used=60,496KB committed=70,604KB
+FA 23:15:54:743 JTS-DeadlockMonitor-2: CPU:cur=3.16% avg=0.65% 30 min avg=0.65% 5 min avg=1.16% 1 min avg=1.30%
+FA 23:15:54:744 JTS-DeadlockMonitor-2: GC:called=48 times CPU used=0.04%
+FA 23:15:54:744 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%

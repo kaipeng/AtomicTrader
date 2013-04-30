@@ -80,10 +80,17 @@ public class Dispatcher {
     }
 
     public void exit() {
-        if (trader != null) {
+        if (trader != null && mode!=Mode.Idle) {
         	trader.getAssistant().removeAllStrategies();
-            while(trader.getAssistant().isCancelingAllOpenOrders)
-            	trader.getAssistant().disconnect();
+        	long delay = 2000;
+            try {
+				Thread.sleep(delay);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            //while(trader.getAssistant().isCancelingAllOpenOrders){}
+        	//trader.getAssistant().disconnect();
         }
         System.exit(0);
     }
@@ -114,7 +121,7 @@ public class Dispatcher {
             trader.getAssistant().connect();
             //MonitoringServer.start();
         } else {
-            trader.getAssistant().disconnect();
+            //trader.getAssistant().disconnect();
         }
 
         fireModelChanged(Event.ModeChanged);

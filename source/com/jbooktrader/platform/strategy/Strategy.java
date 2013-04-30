@@ -23,6 +23,7 @@ public abstract class Strategy implements Comparable<Strategy> {
     private final String name;
     private MarketBook marketBook;
     private Contract contract;
+    private ContractDetails contractDetails;
     private TradingSchedule tradingSchedule;
     private PositionManager positionManager;
     private PerformanceManager performanceManager;
@@ -201,6 +202,14 @@ public abstract class Strategy implements Comparable<Strategy> {
 
 	public void setStrategyID(int strategyID) {
 		this.strategyID = strategyID;
+	}
+
+	public ContractDetails getContractDetails() {
+		return contractDetails;
+	}
+
+	public void setContractDetails(ContractDetails contractDetails) {
+		this.contractDetails = contractDetails;
 	}
 
 }

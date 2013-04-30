@@ -47,6 +47,10 @@ public class TraderAssistant {
         tickers = new HashMap<String, Integer>();
         marketBooks = new HashMap<Integer, MarketBook>();
         subscribedTickers = new HashSet<Integer>();
+        System.out.print("******Rounding a series of numbers:\n");
+        System.out.println("1588.43 by .25: " + roundToMinTick(.25, 1588.43));
+        System.out.println("1588.01 by .25: " + roundToMinTick(.25, 1588.01));
+        System.out.println("144.005 by .01: " + roundToMinTick(.01, 144.005));
 
     }
 
@@ -199,7 +203,12 @@ public class TraderAssistant {
         } catch (Throwable t) {
             eventReport.report(t);
         }
-}
+    }
+    public void cancelAllStrategyFeeds(){
+    	for(Strategy strategy : getAllStrategies()){
+    		cancelAllStrategyFeeds(strategy);
+    	}
+    }
 
     public synchronized void addStrategy(Strategy strategy) {
         strategy.setIndicatorManager(new IndicatorManager());
@@ -221,15 +230,18 @@ public class TraderAssistant {
     	strategies.remove(strategy.getStrategyID());
     	cancelAllStrategyOrders(strategy);
     	cancelAllStrategyFeeds(strategy);
+        StrategyRunner.getInstance().removeListener(strategy);
     }
 
 
     public synchronized void removeAllStrategies() {
-        strategies.clear();
         cancelAllClientOpenOrders();
+        cancelAllStrategyFeeds();
+        strategies.clear();
         tickers.clear();
         subscribedTickers.clear();
         marketBooks.clear();
+        StrategyRunner.getInstance().removeAllListeners();
     }
 
     public void setAccountCode(String accountCode) {
@@ -259,14 +271,11 @@ public class TraderAssistant {
             double midPrice = strategy.getMarketBook().getSnapshot().getPrice();
             double bidAskSpread = strategy.getBidAskSpread();
             double expectedFillPrice = order.m_action.equalsIgnoreCase("BUY") ? (midPrice + bidAskSpread / 2) : (midPrice - bidAskSpread / 2);
-            expectedFillPrice=roundToMinTick(expectedFillPrice);
+            expectedFillPrice=roundToMinTick(strategy.getContractDetails().m_minTick, expectedFillPrice);
             strategy.getPositionManager().setExpectedFillPrice(expectedFillPrice);
             
-            //TODO:reset this number with a meaningful lmtPrice
-            if(order.m_orderType.equals("LMT"))
-            	order.m_lmtPrice = expectedFillPrice;
             
-            System.out.println("[ORDER] Contract: " + contract.m_symbol + " shares: " + order.m_totalQuantity + " px: " + expectedFillPrice);
+            System.out.println("[ORDER] Contract: " + contract.m_symbol + " shares: " + order.m_totalQuantity + " lmtpx: " + order.m_lmtPrice);
 
             if (mode == Mode.Trade) {
                 socket.placeOrder(orderID, contract, order);
@@ -283,9 +292,11 @@ public class TraderAssistant {
         }
     }
     //TODO: implement min tick rounding
-    double roundToMinTick(double d) {
-    	DecimalFormat twoDForm = new DecimalFormat("#.##");
-    	return Double.valueOf(twoDForm.format(d));
+    double roundToMinTick(double minTick, double d) {
+    	d+=minTick/2.0;
+    	long convert = (int) (d / minTick);
+    	double dbl2 = ((double)convert)*minTick;
+    	return Double.valueOf(dbl2);
     }
     
     public void cancelOrder(int orderID){
@@ -327,6 +338,13 @@ public class TraderAssistant {
     }
     
     public void placeLimitOrderMidMkt(Contract contract, int quantity, String action, Strategy strategy) {
+        double midPrice = roundToMinTick(strategy.getContractDetails().m_minTick, strategy.getMarketBook().getSnapshot().getPrice());
+    	placeLimitOrder(contract, quantity, action, midPrice-10.0, strategy);
+        
+    }
+    
+    //TODO: stub - finish implementation
+    public void placeLimitOrder(Contract contract, int quantity, String action, double price, Strategy strategy) {
         Order order = new Order();
         order.m_overridePercentageConstraints = true;
         order.m_action = action;
@@ -334,17 +352,14 @@ public class TraderAssistant {
         order.m_orderType = "LMT";
         System.out.println("[PLACING LMT ORDER]");
         //TODO: trade count on gui is wrong (says 0?)
-        placeOrder(contract, order, strategy);
+        order.m_lmtPrice = price;
         
+        placeOrder(contract, order, strategy);
+
     }
     
     //TODO: stub - finish implementation
-    public void placeLimitOrder(Contract contract, int quantity, String action, double price, Strategy strategy) {
-    	
-    }
-    
-    //TODO: stub - finish implementation
-    public void placeLimitOrder(Contract contract, int quantity, String action, double price, double stopPrice, Strategy strategy) {
+    public void placeLimitOrderWithStop(Contract contract, int quantity, String action, double price, double stopPrice, Strategy strategy) {
     	
     }
 

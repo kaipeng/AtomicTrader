@@ -104,7 +104,7 @@ public class Trader extends EWrapperAdapter {
     	
     	
     	//cancelled order
-    	if(status.equalsIgnoreCase("Cancelled")){
+    	if(status.equalsIgnoreCase("Cancelled") || status.equalsIgnoreCase("Inactive") || status.equalsIgnoreCase("Filled")){
     		try{
     			traderAssistant.getOpenOrders().remove(orderId);
     		} catch (Throwable t) {
@@ -130,6 +130,11 @@ public class Trader extends EWrapperAdapter {
     @Override
     public void contractDetails(int id, ContractDetails cd) {
         String lineSep = "<br>";
+        for(Strategy strat : traderAssistant.getAllStrategies()){
+        	if(strat.getContract().m_conId == cd.m_underConId){
+        		strat.setContractDetails(cd);
+        	}
+        }
         StringBuilder details = new StringBuilder("Contract details:").append(lineSep);
         details.append("Trading class: ").append(cd.m_tradingClass).append(lineSep);
         details.append("Exchanges: ").append(cd.m_validExchanges).append(lineSep);
