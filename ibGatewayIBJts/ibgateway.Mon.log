@@ -952,3 +952,38 @@ HP 22:41:40:807 JTS-Cleaner-28: Cleaning maps
 HP 22:41:48:000 JTS-CCPDispatcher-32: Setting time offset to -277 diff 663
 HP 22:41:48:000 JTS-CCPDispatcher-32: Lightweight position response received: [DU15191.]
 HP 22:42:41:471 JTS-Cleaner-28: Cleaning maps
+HP 22:43:41:471 JTS-Cleaner-28: Cleaning maps
+HP 22:43:57:013 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+HP 22:43:57:110 JTS-CCPDispatcher-32: ShortRowContainer.purgeUserEntries() called for ASK: Stock (ARCA)
+HP 22:44:29:794 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=32,438KB HeapUsage: Max=126,912KB used=94,473KB committed=126,912KB NonHeapUsage: Max=133,120KB used=60,049KB committed=70,184KB
+HP 22:44:30:797 JTS-DeadlockMonitor-2: CPU:cur=0.33% avg=0.41% 30 min avg=0.34% 5 min avg=0.55% 1 min avg=0.54%
+HP 22:44:30:797 JTS-DeadlockMonitor-2: GC:called=45 times CPU used=0.04%
+HP 22:44:30:797 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+HP 22:44:41:471 JTS-Cleaner-28: Cleaning maps
+HP 22:44:42:446 JTS-EServerSocket-68: [100:46:67:1:0:0:0:SYS] Client{100} terminated conversation.
+HP 22:44:42:446 JTS-EServerSocket-68: null
+HP 22:44:42:447 JTS-EServerSocketNotifier-67: Terminating
+HP 22:44:42:450 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=SPY  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=SPY  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=529722917  mrwp=false  conid=756733  marketName=SPY  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [158.08], m_ask [158.1], m_last [158.11], m_lastTimeStamp [1367300681],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [506], m_askSize [86], m_lastSize [3], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [100.0], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@72f60f20  cusip=  dataFeed= mktDataTag=2,lastMktDataTag=3,deepTag=1,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+HP 22:44:42:451 JTS-Async-26: DeepRecord.clean called for 756733 on SMART
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (ARCA)
+HP 22:44:42:451 JTS-Async-26: DEEP data request is sent for BEST exchange, ec: Symbol=QQQ  Type=STK  Expiry=  Strike=0.0  Put/Call=?  Exchange=SMART  CompExch=CHX,ARCA,ISLAND,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX,  Currency=USD  Multiplier=null  IbLocalSymbol=QQQ  SecIdType=null  SecId=null  includeExpired=false  newsSource=null  Legs=null  Special Info=  lotSize=100  hashCode=613040470  mrwp=false  conid=43661924  marketName=NMS  eligibleRelevant=false  validExchanges=SMART,CHX,BTRADE,ARCA,ISLAND,IBSX,DRCTEDGE,NSX,BEX,CBSX,BATS,EDGEA,LAVA,BYX,PSX  underWriter=null  record=Record: m_bid [69.83], m_ask [69.85], m_last [69.83], m_lastTimeStamp [1367300682],m_lastAttribs [0],m_close [undefined], m_todaysClose [undefined], m_closeAttribs [-1], m_bidSize [978], m_askSize [1533], m_lastSize [0], m_bidEligible [1], m_askEligible [1], m_lastCommission [-1], m_lastSpecialPrice [-1], m_lastQuantityEstimated [-1], m_lastSettlement [-1], m_lastWeightedAvg [-1], m_lastOutsideMktHour [-1], m_callOptionVolume [2147483647], m_putOptionVolume [2147483647], m_impliedVolatility [1.7976931348623157E308], m_callOptionOpenInterest [2147483647], m_putOptionOpenInterest [2147483647], m_markPrice [1.7976931348623157E308], m_ibRate [1.7976931348623157E308], m_delayedBid [undefined], m_delayedAsk [undefined], m_delayedLast [undefined], m_delayedBidSize [0], m_delayedAskSize [0], m_delayedLastSize [0], m_delayedClose [undefined], m_delayedCloseAttribs [-1], m_duration [3.4028234663852886E38], m_convexity [3.4028234663852886E38], m_valueOfBps [3.4028234663852886E38], m_hedgeRatio [3.4028234663852886E38], m_oas [3.4028234663852886E38], m_pnl <Record: m_position [1.7976931348623157E308], >, m_bondAccruedInterest [1.7976931348623157E308]  display=jclient.record.wb@3ba76e19  cusip=  dataFeed= mktDataTag=5,lastMktDataTag=6,deepTag=4,netPriceDeepTag=null,frozenMktDataTag=null,frozenLastMktDataTag=null  marketBridge=null  destroyed=false
+HP 22:44:42:452 JTS-Async-26: DeepRecord.clean called for 43661924 on SMART
+HP 22:44:42:452 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+HP 22:44:42:452 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+HP 22:44:42:452 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+HP 22:44:42:454 JTS-EServerSocket-68: ArEServer: Removing 1096904150 with id 100
+HP 22:44:42:454 JTS-EServerSocket-68: eServersChanged: 0
+HP 22:44:42:454 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+HP 22:44:42:456 JTS-Async-26: ShortRowContainer.clear() called for ASK: Stock (NASDAQ.NMS)
+HP 22:44:42:456 JTS-Async-26: ShortRowContainer.clear() called for BID: Stock (NASDAQ.NMS)
+HP 22:44:42:458 JTS-EWriter1-69: [100:46:67:1:0:0:0:SYS] Writer thread terminated for socket client{100}.
+HP 22:44:42:458 JTS-EServerSocket-68: [100:46:67:1:0:0:0:SYS] Ending conversation with client{100} at /127.0.0.1
+HP 22:44:42:638 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+HP 22:44:42:638 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
+HP 22:44:49:000 JTS-CCPDispatcher-32: Setting time offset to -328 diff -51
+HP 22:44:49:000 JTS-CCPDispatcher-32: Setting time offset to -328 diff 0
