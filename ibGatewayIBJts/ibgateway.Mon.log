@@ -987,3 +987,15 @@ HP 22:44:42:638 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed con
 HP 22:44:42:638 JTS-ibdemoDispatcher-74: Received deep data for unsubscribed contract 43661924, SMART, QQQ
 HP 22:44:49:000 JTS-CCPDispatcher-32: Setting time offset to -328 diff -51
 HP 22:44:49:000 JTS-CCPDispatcher-32: Setting time offset to -328 diff 0
+HP 22:45:41:420 JTS-Cleaner-28: Cleaning maps
+HP 22:46:31:000 JTS-CCPDispatcher-32: Setting time offset to -1001 diff -673
+HP 22:46:40:747 JTS-Cleaner-28: Cleaning maps
+HP 22:47:40:747 JTS-Cleaner-28: Cleaning maps
+HP 22:47:44:000 JTS-CCPDispatcher-32: Setting time offset to -981 diff 20
+HP 22:47:44:000 JTS-CCPDispatcher-32: Lightweight position response received: [DU15191.]
+HP 22:48:40:767 JTS-Cleaner-28: Cleaning maps
+HP 22:49:29:149 JTS-DeadlockMonitor-2: Memory:total=126,912KB free=26,649KB HeapUsage: Max=126,912KB used=100,262KB committed=126,912KB NonHeapUsage: Max=133,120KB used=60,074KB committed=70,184KB
+HP 22:49:30:152 JTS-DeadlockMonitor-2: CPU:cur=0.04% avg=0.36% 30 min avg=0.26% 5 min avg=0.06% 1 min avg=0.05%
+HP 22:49:30:152 JTS-DeadlockMonitor-2: GC:called=45 times CPU used=0.04%
+HP 22:49:30:152 JTS-DeadlockMonitor-2: Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
+HP 22:49:40:768 JTS-Cleaner-28: Cleaning maps
