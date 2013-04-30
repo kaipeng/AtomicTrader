@@ -96,6 +96,36 @@ public class Trader extends EWrapperAdapter {
             eventReport.report(t);
         }
     }
+    
+    @Override
+    public void orderStatus(int orderId, String status, int filled, int remaining, double avgFillPrice, int permId, int parentId, double lastFillPrice, int clientId, String whyHeld) {
+    	//TODO:implement change in order status
+    	//IMplement partial fill
+    	
+    	
+    	//cancelled order
+    	if(status.equalsIgnoreCase("Cancelled")){
+    		try{
+    			traderAssistant.getOpenOrders().remove(orderId);
+    		} catch (Throwable t) {
+                // Do not allow exceptions come back to the socket -- it will cause disconnects
+                eventReport.report(t);
+            }
+    		finally{
+    			if(traderAssistant.getOpenOrders().size() == 0){
+    		    	traderAssistant.isCancelingAllOpenOrders = false;
+    			}
+    		}
+    	}
+    }
+    
+    @Override
+    public void openOrder(int orderId, Contract contract, Order order, OrderState orderState ){
+    	//Read cancel queue
+    	if(traderAssistant.isCancelingAllOpenOrders){
+    		traderAssistant.cancelOrder(orderId);
+    	}
+	}
 
     @Override
     public void contractDetails(int id, ContractDetails cd) {

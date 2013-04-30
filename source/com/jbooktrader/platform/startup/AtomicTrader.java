@@ -12,16 +12,21 @@ import java.nio.channels.*;
  * Application starter.
  */
 public class AtomicTrader {
+    public static final boolean TEST_MODE = true;
+
     public static final String APP_NAME = "Atomic Trader";
     public static final String VERSION = ".1";
     public static final String RELEASE_DATE = "4/22/2013";
+
     private static String appPath;
+    private static String runMode;
+
 
     /**
      * Instantiates the necessary parts of the application: the application model,
      * views, and controller.
      */
-    private AtomicTrader() throws JBookTraderException {
+    private AtomicTrader(String runMode) throws JBookTraderException {
         try {
             Dispatcher.getInstance().setReporter();
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
@@ -33,7 +38,7 @@ public class AtomicTrader {
         } catch (Exception e) {
             throw new JBookTraderException(e);
         }
-        new MainFrameController();
+        new MainFrameController(runMode);
     }
 
     /**
@@ -51,12 +56,13 @@ public class AtomicTrader {
                 return;
             }
 
-            if (args.length != 1) {
-                String msg = "Exactly one argument must be passed. Usage: JBookTrader <JBookTraderDirectory>";
+            if (args.length < 1) {
+                String msg = "At least one argument must be passed. Usage: JBookTrader <JBookTraderDirectory> <RunMode ''/'trade'/'forwardtest'/'closingpositions'>";
                 throw new JBookTraderException(msg);
             }
             appPath = args[0];
-            new AtomicTrader();
+            runMode = args[1];
+            new AtomicTrader(runMode);
         } catch (Throwable t) {
             MessageDialog.showException(t);
         }

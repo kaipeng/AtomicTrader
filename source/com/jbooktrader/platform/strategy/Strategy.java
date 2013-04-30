@@ -29,6 +29,7 @@ public abstract class Strategy implements Comparable<Strategy> {
     private StrategyReportManager strategyReportManager;
     private IndicatorManager indicatorManager;
     private double bidAskSpread;
+    private int strategyID;
 
     /**
      * Framework calls this method when a new snapshot of the limit order book is taken.
@@ -193,5 +194,13 @@ public abstract class Strategy implements Comparable<Strategy> {
     public int compareTo(Strategy other) {
         return name.compareTo(other.name);
     }
+
+	public int getStrategyID() {
+		return strategyID;
+	}
+
+	public void setStrategyID(int strategyID) {
+		this.strategyID = strategyID;
+	}
 
 }

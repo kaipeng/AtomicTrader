@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp codebase="http://download2.interactivebrokers.com/java/classes/" href="http://www.interactivebrokers.com/java/classes/ibg.jnlp">
+	<information>
+		<title>IB Gateway</title>
+		<vendor>Interactive Brokers</vendor>
+    		<homepage href="http://www.interactivebrokers.com"/>
+		<description>IB Gateway</description>
+	</information>
+	
+	<security>
+		<all-permissions/>
+	</security>
+	
+	<resources>
+		<j2se max-heap-size="512M" java-vm-args="-Dsun.java2d.noddraw=true -Dswing.boldMetal=false -Dsun.locale.formatasdefault=true -Xmx512M" version="1.7+"/>
+		<j2se max-heap-size="512M" java-vm-args="-Dsun.java2d.noddraw=true -Xmx512M" version="1.6"/>
+		<j2se max-heap-size="512M" java-vm-args="-Dsun.java2d.noddraw=true -Xmx512M" version="1.5"/>
+		<jar href="jts.jar"/>
+		<jar href="total.2012.jar"/>
+		<property name="jnlp.gendate" value="Mon Apr 29 17:11:54 2013"/>
+	</resources>
+
+	<application-desc main-class="ibgateway.GWClient"> 
+	</application-desc>
+</jnlp>

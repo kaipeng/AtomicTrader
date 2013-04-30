@@ -33,6 +33,9 @@ public class TraderAssistant {
     private int nextStrategyID, tickerId, orderID, serverVersion;
     private String accountCode;// used to determine if TWS is running against real or paper trading account
     private boolean isOrderExecutionPending;
+    
+    public boolean isCancelingAllOpenOrders = false;
+
 
 
     public TraderAssistant(Trader trader) {
@@ -182,11 +185,27 @@ public class TraderAssistant {
             eventReport.report(AtomicTrader.APP_NAME, "Requested market data for instrument " + instrument);
         }    
     }
+    public void cancelAllStrategyFeeds(Strategy strategy){
+    	try{
+    		String instrument = makeInstrument(strategy.getContract());
+            Integer ticker = tickers.get(instrument);
+            socket.cancelMktData(ticker);
+            eventReport.report(AtomicTrader.APP_NAME, "Cancelled market data for instrument " + instrument);
+            socket.cancelMktDepth(ticker);
+            eventReport.report(AtomicTrader.APP_NAME, "Cancelled book data for instrument " + instrument);
+            subscribedTickers.remove(ticker);
+            
+            marketBooks.remove(ticker);
+        } catch (Throwable t) {
+            eventReport.report(t);
+        }
+}
 
     public synchronized void addStrategy(Strategy strategy) {
         strategy.setIndicatorManager(new IndicatorManager());
         strategy.setIndicators();
         nextStrategyID++;
+        strategy.setStrategyID(nextStrategyID);
         strategies.put(nextStrategyID, strategy);
         Mode mode = dispatcher.getMode();
         if (mode == Mode.ForwardTest || mode == Mode.Trade) {
@@ -197,9 +216,17 @@ public class TraderAssistant {
         }
     }
 
+    
+    public synchronized void removeStrategy(Strategy strategy) {
+    	strategies.remove(strategy.getStrategyID());
+    	cancelAllStrategyOrders(strategy);
+    	cancelAllStrategyFeeds(strategy);
+    }
+
+
     public synchronized void removeAllStrategies() {
         strategies.clear();
-        openOrders.clear();
+        cancelAllClientOpenOrders();
         tickers.clear();
         subscribedTickers.clear();
         marketBooks.clear();
@@ -234,8 +261,11 @@ public class TraderAssistant {
             double expectedFillPrice = order.m_action.equalsIgnoreCase("BUY") ? (midPrice + bidAskSpread / 2) : (midPrice - bidAskSpread / 2);
             expectedFillPrice=roundToMinTick(expectedFillPrice);
             strategy.getPositionManager().setExpectedFillPrice(expectedFillPrice);
+            
+            //TODO:reset this number with a meaningful lmtPrice
             if(order.m_orderType.equals("LMT"))
             	order.m_lmtPrice = expectedFillPrice;
+            
             System.out.println("[ORDER] Contract: " + contract.m_symbol + " shares: " + order.m_totalQuantity + " px: " + expectedFillPrice);
 
             if (mode == Mode.Trade) {
@@ -257,6 +287,36 @@ public class TraderAssistant {
     	DecimalFormat twoDForm = new DecimalFormat("#.##");
     	return Double.valueOf(twoDForm.format(d));
     }
+    
+    public void cancelOrder(int orderID){
+    	try{
+    		socket.cancelOrder(orderID);
+    	}catch (Throwable t) {
+            eventReport.report(t);
+        }
+    }
+    public void cancelAllClientOpenOrders(){
+    	try{
+    		socket.reqOpenOrders();
+    	}catch (Throwable t) {
+            eventReport.report(t);
+        }
+        isCancelingAllOpenOrders = true;
+    }
+    public void cancelAllStrategyOrders(Strategy strategy){
+        for(OpenOrder openOrder : openOrders.values()){
+        	try{
+	        	if(openOrder.getStrategy().getName().equalsIgnoreCase(strategy.getName())){
+	        		cancelOrder(openOrder.getOrder().m_orderId);
+	        	}
+            } catch (Throwable t) {
+                eventReport.report(t);
+            }
+        }
+    }
+    
+
+    
     public void placeMarketOrder(Contract contract, int quantity, String action, Strategy strategy) {
         Order order = new Order();
         order.m_overridePercentageConstraints = true;

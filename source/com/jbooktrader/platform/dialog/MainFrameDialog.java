@@ -23,9 +23,9 @@ import java.text.*;
 public class MainFrameDialog extends JFrame implements ModelListener {
     private final Toolkit toolkit;
     private JLabel timeLabel;
-    private JMenuItem stopAllMenuItem, tradeAllMenuItem, resetMenuItem, backTestAllMenuItem,forwardTestAllMenuItem;
+    private JMenuItem stopAllMenuItem, tradeAllMenuItem, resetMenuItem, backTestAllMenuItem,forwardTestAllMenuItem, closeAllPositionsMenuItem;
     private JMenuItem exitMenuItem, aboutMenuItem, userManualMenuItem, discussionMenuItem, releaseNotesMenuItem, projectHomeMenuItem, preferencesMenuItem;
-    private JMenuItem infoMenuItem, tradeMenuItem, backTestMenuItem, forwardTestMenuItem, optimizeMenuItem, chartMenuItem;
+    private JMenuItem infoMenuItem, tradeMenuItem, backTestMenuItem, forwardTestMenuItem, optimizeMenuItem, chartMenuItem, closePositionMenuItem, stopMenuItem;
     private StrategyTableModel strategyTableModel;
     private JTable strategyTable;
     private JPopupMenu popupMenu;
@@ -42,11 +42,11 @@ public class MainFrameDialog extends JFrame implements ModelListener {
         switch (event) {
             case ModeChanged:
                 Mode mode = Dispatcher.getInstance().getMode();
-                if (mode == Mode.Trade || mode == Mode.ForwardTest) {
+                if (mode == Mode.Trade || mode == Mode.ForwardTest || mode == Mode.ClosingPositions) {
                     backTestMenuItem.setEnabled(false);
                     optimizeMenuItem.setEnabled(false);
                     chartMenuItem.setEnabled(false);
-                    if (mode == Mode.Trade) {
+                    if (mode == Mode.Trade || mode == Mode.ClosingPositions) {
                         forwardTestMenuItem.setEnabled(false);
                     }
                     if (mode == Mode.ForwardTest) {
@@ -56,6 +56,16 @@ public class MainFrameDialog extends JFrame implements ModelListener {
                 if (mode == Mode.BackTest || mode == Mode.Optimization) {
                     forwardTestMenuItem.setEnabled(false);
                     tradeMenuItem.setEnabled(false);
+                }
+                if(mode == Mode.Idle){
+                    backTestMenuItem.setEnabled(true);
+                    optimizeMenuItem.setEnabled(true);
+                    chartMenuItem.setEnabled(true);
+                    forwardTestMenuItem.setEnabled(true);
+                    tradeMenuItem.setEnabled(true);
+                    closePositionMenuItem.setEnabled(true);
+                }else{
+                    stopMenuItem.setEnabled(true);
                 }
                 setTitle(AtomicTrader.APP_NAME + " - [" + mode.getName() + "]");
                 break;
@@ -116,6 +126,16 @@ public class MainFrameDialog extends JFrame implements ModelListener {
     public void chartAction(ActionListener action) {
         chartMenuItem.addActionListener(action);
     }
+    public void stopAction(ActionListener action) {
+    	stopMenuItem.addActionListener(action);
+    }
+    public void closeAllPositionsAction(ActionListener action) {
+    	closeAllPositionsMenuItem.addActionListener(action);
+    }
+    public void closePositionAction(ActionListener action) {
+    	closePositionMenuItem.addActionListener(action);
+    }
+
 
     public void preferencesAction(ActionListener action) {
         preferencesMenuItem.addActionListener(action);
@@ -132,6 +152,23 @@ public class MainFrameDialog extends JFrame implements ModelListener {
     public void aboutAction(ActionListener action) {
         aboutMenuItem.addActionListener(action);
     }
+    
+    public void tradeAllAction(ActionListener action) {
+    	tradeAllMenuItem.addActionListener(action);
+    }
+    public void stopAllAction(ActionListener action) {
+    	stopAllMenuItem.addActionListener(action);
+    }
+    public void backTestAllAction(ActionListener action) {
+    	backTestAllMenuItem.addActionListener(action);
+    }
+    public void forwardTestAllAction(ActionListener action) {
+    	forwardTestAllMenuItem.addActionListener(action);
+    }
+    public void resetAction(ActionListener action) {
+    	resetMenuItem.addActionListener(action);
+    }
+    
 
     private URL getImageURL(String imageFileName) throws JBookTraderException {
         URL imgURL = ClassLoader.getSystemResource(imageFileName);
@@ -188,9 +225,13 @@ public class MainFrameDialog extends JFrame implements ModelListener {
         tradeAllMenuItem.setMnemonic('T');
         sessionMenu.add(tradeAllMenuItem);
 
-        stopAllMenuItem = new JMenuItem("STOP ALL ORDERS", getImageIcon("stop.png"));
+        stopAllMenuItem = new JMenuItem("STOP ALL\nORDERS", getImageIcon("stop.png"));
         stopAllMenuItem.setMnemonic('S');
         sessionMenu.add(stopAllMenuItem);
+        
+        closeAllPositionsMenuItem = new JMenuItem("CLOSE ALL\nPOSITIONS", getImageIcon("close.png"));
+        closeAllPositionsMenuItem.setMnemonic('C');
+        sessionMenu.add(closeAllPositionsMenuItem);
 
         sessionMenu.addSeparator();
 
@@ -247,8 +288,11 @@ public class MainFrameDialog extends JFrame implements ModelListener {
         backTestMenuItem = new JMenuItem("Back Test", getImageIcon("backTest.png"));
         optimizeMenuItem = new JMenuItem("Optimize", getImageIcon("optimize.png"));
         forwardTestMenuItem = new JMenuItem("Forward Test", getImageIcon("forwardTest.png"));
-        tradeMenuItem = new JMenuItem("Trade");
         chartMenuItem = new JMenuItem("Chart", getImageIcon("chart.png"));
+        tradeMenuItem = new JMenuItem("Trade");
+        closePositionMenuItem = new JMenuItem("Close Position");
+        stopMenuItem = new JMenuItem("Stop");
+
 
         popupMenu.add(infoMenuItem);
         popupMenu.addSeparator();
@@ -258,6 +302,12 @@ public class MainFrameDialog extends JFrame implements ModelListener {
         popupMenu.add(chartMenuItem);
         popupMenu.addSeparator();
         popupMenu.add(tradeMenuItem);
+        popupMenu.addSeparator();
+        popupMenu.add(closePositionMenuItem);
+        popupMenu.addSeparator();
+        popupMenu.add(stopMenuItem);
+
+
 
         JScrollPane strategyTableScrollPane = new JScrollPane();
         strategyTableScrollPane.setAutoscrolls(true);

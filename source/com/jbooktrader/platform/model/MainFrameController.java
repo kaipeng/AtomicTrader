@@ -24,13 +24,53 @@ public class MainFrameController {
     private final StrategyTableModel strategyTableModel;
     private final Dispatcher dispatcher;
 
-    public MainFrameController() throws JBookTraderException {
+    public MainFrameController(String runMode) throws JBookTraderException {
         mainViewDialog = new MainFrameDialog();
         dispatcher = Dispatcher.getInstance();
         dispatcher.addListener(mainViewDialog);
         strategyTable = mainViewDialog.getStrategyTable();
         strategyTableModel = mainViewDialog.getStrategyTableModel();
         assignListeners();
+        
+        if(runMode != null){
+        	System.out.print("Starting in mode: " + runMode);
+        	System.out.print("Matches?: " + Mode.Trade.toString());
+
+        }
+        if(runMode.equalsIgnoreCase(Mode.Trade.toString())){
+        	for(int i = 0; i < strategyTableModel.rows.size(); i++){
+                try {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    Strategy strategy = strategyTableModel.createStrategyForRow(i);
+                    dispatcher.setMode(Mode.Trade);
+                    dispatcher.getTrader().getAssistant().addStrategy(strategy);
+                } catch (Throwable t) {
+                    MessageDialog.showException(t);
+                }
+                finally {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+        	}
+        }else if(runMode.equalsIgnoreCase(Mode.ForwardTest.toString())){
+        	for(int i = 0; i < strategyTableModel.rows.size(); i++){
+                try {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    Strategy strategy = strategyTableModel.createStrategyForRow(i);
+                    dispatcher.setMode(Mode.ForwardTest);
+                    dispatcher.getTrader().getAssistant().addStrategy(strategy);
+                } catch (Throwable t) {
+                    MessageDialog.showException(t);
+                }
+                finally {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+        	}        
+        }else if(runMode.equalsIgnoreCase(Mode.ClosingPositions.toString())){
+        	mainViewDialog.closeAllPositionsAction(null);
+        }else{
+        	dispatcher.setMode(Mode.Idle);
+        }
+
     }
 
     private void exit() {
@@ -104,7 +144,23 @@ public class MainFrameController {
             }
         });
 
-
+        mainViewDialog.backTestAllAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	for(int i = 0; i < strategyTableModel.rows.size(); i++){
+	                try {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+	                    Strategy strategy = strategyTableModel.createStrategyForRow(i);
+	                    dispatcher.setMode(Mode.BackTest);
+	                    new BackTestDialog(mainViewDialog, strategy);
+	                } catch (Throwable t) {
+	                    MessageDialog.showException(t);
+	                } finally {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+	                }
+            	}
+            }
+        });
+        
         mainViewDialog.backTestAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -140,6 +196,24 @@ public class MainFrameController {
                 }
             }
         });
+        
+        mainViewDialog.forwardTestAllAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	for(int i = 0; i < strategyTableModel.rows.size(); i++){
+	                try {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+	                    Strategy strategy = strategyTableModel.createStrategyForRow(i);
+	                    dispatcher.setMode(Mode.ForwardTest);
+	                    dispatcher.getTrader().getAssistant().addStrategy(strategy);
+	                } catch (Throwable t) {
+	                    MessageDialog.showException(t);
+	                }
+	                finally {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+	                }
+            	}
+            }
+        });
 
         mainViewDialog.forwardTestAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -156,6 +230,24 @@ public class MainFrameController {
             }
         });
 
+        mainViewDialog.tradeAllAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	for(int i = 0; i < strategyTableModel.rows.size(); i++){
+	                try {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+	                    Strategy strategy = strategyTableModel.createStrategyForRow(i);
+	                    dispatcher.setMode(Mode.Trade);
+	                    dispatcher.getTrader().getAssistant().addStrategy(strategy);
+	                } catch (Throwable t) {
+	                    MessageDialog.showException(t);
+	                }
+	                finally {
+	                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+	                }
+            	}
+            }
+        });
+        
         mainViewDialog.tradeAction(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -163,6 +255,59 @@ public class MainFrameController {
                     Strategy strategy = createSelectedRowStrategy();
                     dispatcher.setMode(Mode.Trade);
                     dispatcher.getTrader().getAssistant().addStrategy(strategy);
+                } catch (Throwable t) {
+                    MessageDialog.showException(t);
+                } finally {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+        
+        mainViewDialog.stopAllAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	try {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    dispatcher.getTrader().getAssistant().removeAllStrategies();
+                    dispatcher.setMode(Mode.Idle);
+                } catch (Throwable t) {
+                    MessageDialog.showException(t);
+                } finally {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+        
+        mainViewDialog.stopAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	try {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    Strategy strategy = createSelectedRowStrategy();
+                    dispatcher.getTrader().getAssistant().removeStrategy(strategy);
+                } catch (Throwable t) {
+                    MessageDialog.showException(t);
+                } finally {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+        });
+        
+        mainViewDialog.closeAllPositionsAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	//TODO:implement
+            }
+        });
+        mainViewDialog.closePositionAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	//TODO:implement
+            }
+        });
+        mainViewDialog.resetAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	//TODO:implement
+            	try {
+                    mainViewDialog.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    dispatcher.getTrader().getAssistant().removeAllStrategies();
+                    dispatcher.setMode(Mode.Idle);
                 } catch (Throwable t) {
                     MessageDialog.showException(t);
                 } finally {

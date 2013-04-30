@@ -1,7 +1,7 @@
 package com.jbooktrader.platform.indicator;
 
 import com.jbooktrader.platform.marketbook.*;
-
+import com.jbooktrader.platform.startup.AtomicTrader;
 import java.util.*;
 
 /**
@@ -11,8 +11,8 @@ public class IndicatorManager {
     //TEMP OVERRIDE
     //TODO: REPLACE after demo
 
-    private static final long MIN_SAMPLE_SIZE = 3;// 10sec worth of samples
-    //private static final long MIN_SAMPLE_SIZE = 60 * 60;// 1 hour worth of samples
+
+    private static long MIN_SAMPLE_SIZE = 60 * 60;// 1 hour worth of samples
 
     private final List<Indicator> indicators;
 
@@ -47,6 +47,8 @@ public class IndicatorManager {
     }
 
     public boolean hasValidIndicators() {
+        if(AtomicTrader.TEST_MODE)
+        	return true;
         return (samples >= MIN_SAMPLE_SIZE);
     }
 

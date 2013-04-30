@@ -57,7 +57,7 @@ public class KaiSPY extends StrategySPY {
         double force = balanceVelocity - scale * priceVelocity;
         System.out.println("[KaiSPY] Force: " + force + "\tEntry: " + entry + "\tExit: " + exit);
 
-        if (force >= entry && balanceVelocity > 0 && priceVelocity < 0) {
+        if (force >= entry) {
             System.out.println("[BUY]");
 
             setPosition(100);

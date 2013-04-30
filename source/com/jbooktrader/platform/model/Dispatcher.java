@@ -81,13 +81,15 @@ public class Dispatcher {
 
     public void exit() {
         if (trader != null) {
-            trader.getAssistant().disconnect();
+        	trader.getAssistant().removeAllStrategies();
+            while(trader.getAssistant().isCancelingAllOpenOrders)
+            	trader.getAssistant().disconnect();
         }
         System.exit(0);
     }
 
     public void setMode(Mode mode) throws JBookTraderException {
-        if (mode == Mode.Trade || mode == Mode.ForwardTest) {
+        if (mode == Mode.Trade || mode == Mode.ForwardTest || mode == Mode.ClosingPositions) {
             if (ntpClock == null) {
                 ntpClock = new NTPClock();
             }
@@ -108,7 +110,7 @@ public class Dispatcher {
         }
 
         MonitoringServer.start();
-        if (mode == Mode.Trade || mode == Mode.ForwardTest) {
+        if (mode == Mode.Trade || mode == Mode.ForwardTest || mode == Mode.ClosingPositions) {
             trader.getAssistant().connect();
             //MonitoringServer.start();
         } else {

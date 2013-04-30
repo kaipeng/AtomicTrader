@@ -4,7 +4,11 @@ public enum Mode {
     Trade("Trading"),
     BackTest("Back Testing"),
     ForwardTest("Forward Testing"),
-    Optimization("Optimizing");
+    Optimization("Optimizing"),
+    Idle("Idle"),
+    ClosingPositions("ClosingPositions");
+
+
 
     private final String name;
 
