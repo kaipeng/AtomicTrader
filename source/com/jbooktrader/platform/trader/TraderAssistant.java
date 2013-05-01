@@ -47,11 +47,6 @@ public class TraderAssistant {
         tickers = new HashMap<String, Integer>();
         marketBooks = new HashMap<Integer, MarketBook>();
         subscribedTickers = new HashSet<Integer>();
-        System.out.print("******Rounding a series of numbers:\n");
-        System.out.println("1588.43 by .25: " + roundToMinTick(.25, 1588.43));
-        System.out.println("1588.01 by .25: " + roundToMinTick(.25, 1588.01));
-        System.out.println("144.005 by .01: " + roundToMinTick(.01, 144.005));
-
     }
 
     public Map<Integer, OpenOrder> getOpenOrders() {

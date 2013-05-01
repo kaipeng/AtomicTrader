@@ -17,6 +17,7 @@ public class WebHandler implements HttpHandler {
     private static final DecimalFormat df0 = NumberFormatterFactory.getNumberFormatter(0);
     private static final DecimalFormat df6 = NumberFormatterFactory.getNumberFormatter(6);
     private static final String RESOURCE_DIR = AtomicTrader.getAppPath() + "/resources";
+    private static final String TEMPLATE_DIR = AtomicTrader.getAppPath() + "/resources/templates";
     private static final String REPORT_DIR = AtomicTrader.getAppPath() + "/reports";
 
     private void addRow(StringBuilder response, List<Object> cells, int rowCount) {
@@ -33,43 +34,7 @@ public class WebHandler implements HttpHandler {
         String resource = httpExchange.getRequestURI().getPath();
 
         if (resource.equals("") || resource.equals("/")) {
-            Dispatcher dispatcher = Dispatcher.getInstance();
-            List<Strategy> strategies = new ArrayList<Strategy>(dispatcher.getTrader().getAssistant().getAllStrategies());
-            Collections.sort(strategies);
-
-            StringBuilder response = new StringBuilder();
-            response.append("<html><head><title>");
-            response.append(AtomicTrader.APP_NAME + ", version " + AtomicTrader.VERSION + "</title>");
-            response.append("<link rel=stylesheet type=text/css href=bootstrap.min.css />");
-            response.append("<link rel=stylesheet type=text/css href=JBookTrader.css />");
-
-            response.append("<link rel=\"shortcut icon\" type=image/x-icon href=JBookTrader.ico />");
-            response.append("</head><body><h1><img src=\"atomic.png\">" + AtomicTrader.APP_NAME + "");
-            response.append("<h2><a href=EventReport.htm target=_new>" + dispatcher.getMode().getName() + "</a></h2></h1><table>");
-            response.append("<tr><th>Strategy</th><th>Symbol</th><th>Price</th><th>Position</th><th>Trades</th><th>Net Profit</th></tr>");
-
-            int strategyRowCount = 0;
-            for (Strategy strategy : strategies) {
-                MarketSnapshot marketSnapshot = strategy.getMarketBook().getSnapshot();
-                PerformanceManager pm = strategy.getPerformanceManager();
-
-                List<Object> cells = new ArrayList<Object>();
-                String path = REPORT_DIR + "/" + strategy.getName() + ".htm";
-                if (new File(path).exists()) {
-                    cells.add("<a href=" + strategy.getName() + ".htm target=_new>" + strategy.getName() + "</a>");
-                } else {
-                    cells.add(strategy.getName());
-                }
-                cells.add(strategy.getSymbol());
-                cells.add((marketSnapshot != null) ? df6.format(marketSnapshot.getPrice()) : "n/a");
-                cells.add(strategy.getPositionManager().getCurrentPosition());
-                cells.add(pm.getTrades());
-                cells.add(df0.format(pm.getNetProfit()));
-                addRow(response, cells, strategyRowCount++);
-            }
-
-            response.append("</table></body></html>");
-            out = response.toString().getBytes();
+            out = mainPageResponse().getBytes();
         } else {
             String path = (resource.endsWith("htm") ? REPORT_DIR : RESOURCE_DIR) + resource;
             BufferedInputStream bis = new BufferedInputStream(new FileInputStream(path));
@@ -83,5 +48,90 @@ public class WebHandler implements HttpHandler {
         responseBody.write(out);
         responseBody.close();
     }
+    
+    public static StringBuilder insertVariable(StringBuilder response, String key, String value){
+    	int index = 0;
+    	while(true){
+    		index = response.indexOf("{"+key+"}");
+    		if(index == -1)
+    			return response;
 
+        	response = response.replace(index, index+key.length()+2, value);
+    	}
+    }
+    
+    public static StringBuilder openTemplate(String path, Map<String, String>variables){
+        StringBuilder response = new StringBuilder();
+        
+        try{
+      	  // Open the file that is the first 
+      	  // command line parameter
+      	  FileInputStream fstream = new FileInputStream(path);
+      	  // Get the object of DataInputStream
+      	  DataInputStream in = new DataInputStream(fstream);
+      	  BufferedReader br = new BufferedReader(new InputStreamReader(in));
+      	  String strLine;
+      	  //Read File Line By Line
+      	  while ((strLine = br.readLine()) != null) {
+      		  // Print the content on the console
+      		  response.append(strLine);
+      	  }
+      	  //Close the input stream
+      	  in.close();
+	    }catch (Exception e){//Catch exception if any
+      	  System.out.println("Error: " + e.getMessage());
+	    }
+
+        for(String key : variables.keySet()){
+        	response = insertVariable(response, key, variables.get(key));
+        }
+
+        return response;
+    }
+
+    private String mainPageResponse(){
+    	Dispatcher dispatcher = Dispatcher.getInstance();
+        List<Strategy> strategies = new ArrayList<Strategy>(dispatcher.getTrader().getAssistant().getAllStrategies());
+        Collections.sort(strategies);
+        
+        HashMap<String, String> variables = new HashMap<String, String>();
+        variables.put("APP_NAME", (AtomicTrader.APP_NAME));
+        variables.put("VERSION", (AtomicTrader.VERSION));
+        variables.put("MODE", dispatcher.getMode().getName());
+        
+        StringBuilder response = openTemplate(TEMPLATE_DIR + "/main.html", variables);
+
+        int strategyRowCount = 0;
+        System.out.println("Strats: " + strategies.toString());
+
+        for (Strategy strategy : strategies) {
+            System.out.println("Strat: " + strategy.getName());
+
+            MarketSnapshot marketSnapshot = strategy.getMarketBook().getSnapshot();
+            PerformanceManager pm = strategy.getPerformanceManager();
+
+            List<Object> cells = new ArrayList<Object>();
+            String path = REPORT_DIR + "/" + strategy.getName() + ".htm";
+            System.out.println("Strat path: " + path);
+
+            if (new File(path).exists()) {
+                cells.add("<a href=" + strategy.getName() + ".htm target=_new>" + strategy.getName() + "</a>");
+            } else {
+                cells.add(strategy.getName());
+            }
+            cells.add(strategy.getSymbol());
+            cells.add((marketSnapshot != null) ? df6.format(marketSnapshot.getPrice()) : "n/a");
+            cells.add(strategy.getPositionManager().getCurrentPosition());
+            cells.add(pm.getTrades());
+            cells.add(df0.format(pm.getNetProfit()));
+            System.out.println("response: " + response);
+
+            addRow(response, cells, strategyRowCount++);
+            System.out.println("Add row: " + response);
+
+        }
+
+        response.append("</table></body></html>");
+        return response.toString();
+    }
 }
