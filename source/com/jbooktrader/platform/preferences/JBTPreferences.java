@@ -3,7 +3,7 @@ package com.jbooktrader.platform.preferences;
 public enum JBTPreferences {
     // TWS connection
     Host("Host", "localhost"),
-    Port("Port", "7496"),
+    Port("Port", "4001"),
     ClientID("Client ID", "0"),
 
     // Web Access
