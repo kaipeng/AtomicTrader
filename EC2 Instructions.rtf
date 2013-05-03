@@ -18,15 +18,31 @@ Create EC2 instance:\
 \
 SSH\
 	ssh -vi kai-keypair.pem ec2-user@54.235.105.148\
-\
-Updates and git:\
-	\
-\
-Optionally Attach EBS Volume\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Optionally Attach EBS Volume\
 	sudo mkfs.ext4 /dev/xvdf\
 	sudo mkdir -m 000 /vol\
 	echo "/dev/xvdf /vol auto noatime 0 0" | sudo tee -a /etc/fstab\
 	sudo mount /vol\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
 \
-Push AtomicTrader\
-	scp AtomicTrader/ -r -i kai-keypair.pem ec2-user@54.235.105.148:/}
+Updates and git:\
+	Generate and add deploy key:\
+		ssh-keygen -t rsa -C "your email address"\
+	Add deploy key to github repo kaipeng/atomictrader\
+\
+	Install git:\
+		yum install git\
+	Clone Repo:\
+		git clone git://github.com/kaipeng/AtomicTrader.git\
+OR Scp:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Push AtomicTrader\
+	scp AtomicTrader/ -r -i kai-keypair.pem ec2-user@54.235.105.148:/\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+Run IBController:\
+	cd AtomicTrader\
+	bash runRemotely.sh IBusername IBpassword\
+}

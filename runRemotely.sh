@@ -11,12 +11,11 @@
 
 # and run IBController
 CLASSPATH=$(pwd)
-echo "$CLASSPATH/IBController/IBController.jar"
+echo "Running IBController: $CLASSPATH/IBController/IBController.jar"
 
 cd ibGateway/IBJts
-ls
 
-java -cp "jts.jar:hsqldb.jar:jcommon-1.0.12.jar:jhall.jar:other.jar:rss.jar:$CLASSPATH/IBController/IBController.jar" "-Dsun.java2d.noddraw=true -Xmx512M -XX:MaxPermSize=128M" ibcontroller.IBGatewayController "$CLASSPATH/IBController/ibcontroller.ini" "edemo" "demouser"
+java -cp "jts.jar:hsqldb.jar:jcommon-1.0.12.jar:jhall.jar:other.jar:rss.jar:$CLASSPATH/IBController/IBController.jar" "-Dsun.java2d.noddraw=true -Xmx512M -XX:MaxPermSize=128M" ibcontroller.IBGatewayController "$CLASSPATH/IBController/IBcontroller.ini" $1 $2
 
 
 # start AtomicTrader
