@@ -21,7 +21,7 @@ do
     CLASSPATH=$JAR:$CLASSPATH
 done
 
-echo "Classpath: $CLASSPATH"
+echo "Classpath: $CLASSPATH:$(pwd)/bin"
 
 #rm -f reports/*
 mkdir -p bin
