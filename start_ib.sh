@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # and run IBController
+#starting VNC Server
+vncserver
+
 CLASSPATH=$(pwd)
 echo "Running IBController: $CLASSPATH/IBController/IBController.jar"
 
