@@ -8,7 +8,7 @@ public enum JBTPreferences {
 
     // Web Access
     WebAccess("Web Access", "enabled"),
-    WebAccessPort("Web Access Port", "1235"),
+    WebAccessPort("Web Access Port", "80"),
     WebAccessUser("Web Access User", "admin"),
     WebAccessPassword("Web Access Password", "admin"),
 
