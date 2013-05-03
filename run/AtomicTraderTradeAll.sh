@@ -16,10 +16,18 @@ export LIBXCB_ALLOW_SLOPPY_LOCK=1
 
 CLASSPATH="$(pwd)/resources"
 
-for JAR in $(pwd)/lib/*.jar
-do
-    CLASSPATH=$JAR:$CLASSPATH
-done
+#for JAR in $(pwd)/lib/*.jar
+#do
+#    CLASSPATH=$JAR:$CLASSPATH
+#done
+
+CLASSPATH="$(pwd)/lib/junit-4.5.jar:$CLASSPATH"
+CLASSPATH="$(pwd)/lib/jfreechart-1.0.13.jar:$CLASSPATH"
+CLASSPATH="$(pwd)/lib/jcommon-1.0.16.jar:$CLASSPATH"
+CLASSPATH="$(pwd)/lib/jcalendar-1.3.3.jar:$CLASSPATH"
+CLASSPATH="$(pwd)/lib/ibapi-9.63.jar:$CLASSPATH"
+CLASSPATH="$(pwd)/lib/commons-net-2.0.jar:$CLASSPATH"
+
 
 echo "Classpath: $CLASSPATH:$(pwd)/bin"
 
