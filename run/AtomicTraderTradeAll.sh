@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $(dirname "$0")/..
+cd ..
 
 if [ -z "$JAVA_HOME" ]; then
     export JAVA_HOME=/usr/lib/jvm/java-6-sun
