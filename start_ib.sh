@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# ssh into machine
-cd AtomicTrader
-git pull
-
 # and run IBController
 CLASSPATH=$(pwd)
 echo "Running IBController: $CLASSPATH/IBController/IBController.jar"
