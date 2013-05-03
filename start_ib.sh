@@ -2,8 +2,7 @@
 
 # and run IBController
 #starting VNC Server
-vncserver :0
-export DISPLAY=:0
+
 CLASSPATH=$(pwd)
 echo "Running IBController: $CLASSPATH/IBController/IBController.jar"
 
