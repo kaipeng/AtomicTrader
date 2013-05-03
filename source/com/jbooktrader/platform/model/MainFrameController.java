@@ -34,8 +34,6 @@ public class MainFrameController {
         
         if(runMode != null){
         	System.out.print("Starting in mode: " + runMode);
-        	System.out.print("Matches?: " + Mode.Trade.toString());
-
         }
         if(runMode.equalsIgnoreCase(Mode.Trade.toString())){
         	for(int i = 0; i < strategyTableModel.rows.size(); i++){

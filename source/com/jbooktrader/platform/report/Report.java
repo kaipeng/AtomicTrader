@@ -50,10 +50,7 @@ public abstract class Report {
     }
 
 
-    protected synchronized void write(StringBuilder sb) {
-        if(CONSOLEPRINT_REPORT)
-        	System.out.println(sb);
-        
+    protected synchronized void write(StringBuilder sb) {        
         writer.println(sb);
         writer.flush();
     }

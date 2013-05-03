@@ -63,6 +63,8 @@ public class EventReport extends Report {
     }
 
     public void report(String reporter, String message) {
+        if(CONSOLEPRINT_REPORT)
+        	System.out.println(reporter+": "+message);
         if (isEnabled) {
             report(reporter, new StringBuilder(message));
         }
