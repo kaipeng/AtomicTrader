@@ -36,6 +36,7 @@ mkdir -p bin
 find bin    -name "*.class" | xargs rm -f
 find source -name "*.java"  | xargs javac -cp "$CLASSPATH" -d bin
 
+
 JVM_OPTS="-XX:+AggressiveHeap"
 [ -x "$(which uname)" ] && [ "$(uname -m)" == "x86_64" ] && JVM_OPTS="$JVM_OPTS -d64"
 

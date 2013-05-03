@@ -11,8 +11,10 @@ import com.jbooktrader.strategy.base.*;
 /**
  *
  */
-public class KaiSPY extends StrategySPY {
+public class KaiMSFT extends StrategyStock {
+    private static final String TICKER = "MSFT";
 
+	
     // Technical indicators
     private Indicator balanceVelocityInd, priceVelocityInd;
 
@@ -24,10 +26,10 @@ public class KaiSPY extends StrategySPY {
 
     // Strategy parameters values
     private final int entry, exit, scale;
+    
 
-
-    public KaiSPY(StrategyParams optimizationParams) throws JBookTraderException {
-        super(optimizationParams);
+    public KaiMSFT(StrategyParams optimizationParams) throws JBookTraderException {
+        super(optimizationParams, TICKER);
 
         entry = getParam(ENTRY);
         exit = getParam(EXIT);
@@ -38,8 +40,8 @@ public class KaiSPY extends StrategySPY {
     public void setParams() {
         addParam(PERIOD, 2200, 3600, 5, 3200);
         addParam(SCALE, 5, 25, 1, 16);
-        addParam(ENTRY, 20, 120, 1, 0);
-        addParam(EXIT, -50, 0, 1, -5);
+        addParam(ENTRY, 20, 120, 1, 5);
+        addParam(EXIT, -50, 0, 1, -3);
     }
 
     @Override
@@ -55,7 +57,7 @@ public class KaiSPY extends StrategySPY {
         double priceVelocity = priceVelocityInd.getValue();
         
         double force = balanceVelocity - scale * priceVelocity;
-        System.out.println("[KaiSPY] Force: " + force + "\tEntry: " + entry + "\tExit: " + exit);
+        System.out.println("[Kai"+TICKER+"] Force: " + force + "\tEntry: " + entry + "\tExit: " + exit);
 
         if (force >= entry) {
             System.out.println("[BUY]");

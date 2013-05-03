@@ -334,7 +334,7 @@ public class TraderAssistant {
     
     public void placeLimitOrderMidMkt(Contract contract, int quantity, String action, Strategy strategy) {
         double midPrice = roundToMinTick(strategy.getContractDetails().m_minTick, strategy.getMarketBook().getSnapshot().getPrice());
-    	placeLimitOrder(contract, quantity, action, midPrice-10.0, strategy);
+    	placeLimitOrder(contract, quantity, action, midPrice, strategy);
         
     }
     
