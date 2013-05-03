@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ..
+cd $(dirname "$0")/..
 
 if [ -z "$JAVA_HOME" ]; then
     export JAVA_HOME=/usr/lib/jvm/java-6-sun
@@ -21,7 +21,7 @@ do
     CLASSPATH=$JAR:$CLASSPATH
 done
 
-#echo "Classpath: $CLASSPATH"
+echo "Classpath: $CLASSPATH"
 
 #rm -f reports/*
 mkdir -p bin
